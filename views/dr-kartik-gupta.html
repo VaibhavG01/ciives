@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Kartik C. Gupta | CIIVES</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body class="">
+
+    <!-- Top Bar -->
+    <div class="bg-primary text-white text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-1 md:mb-0">
+                <span class="font-bold">CIIVES</span>
+                <span class="hidden sm:inline">Central India Institute of Vascular and Endovascular Sciences</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center space-x-1">
+                    <i class="ri-phone-fill"></i><span>Emergency: +91 9423866938</span>
+                </span>
+                <a href="https://www.facebook.com/profile.php?id=61576810187262" class="hover:text-blue-200"><i
+                        class="ri-facebook-circle-fill"></i></a>
+                <a href="https://www.instagram.com/central_indiavascular/" class="hover:text-blue-200"><i
+                        class="ri-instagram-line"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="bg-info shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="../index.html" class="flex items-center space-x-2">
+                <img src="../assets/images/logo/logo.png" alt="CIIVES Logo" class="h-20 w-auto" />
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-6 text-gray-700 font-medium">
+                <a href="../index.html">Home</a>
+
+                <!-- About Us Dropdown -->
+                <div class="relative group">
+                    <button class="inline-flex items-center bg-primary p-2 text-text">About Us ▾</button>
+                    <div
+                        class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+
+                        <a href="../views/ciives.html" class="block px-4 py-2 hover:bg-blue-50">CIIVES</a>
+                        <a href="../views/dr-rohit-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Rohit Gupta</a>
+                        <a href="../views/dr-kartik-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Kartik
+                            Gupta</a>
+                        <a href="../views/dr-preeti-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Preeti
+                            Gupta</a>
+                    </div>
+                </div>
+
+
+                <!-- Conditions Dropdown -->
+                <div class="relative group">
+                    <button class="inline-flex items-center bg-primary p-2 text-text">Conditions ▾</button>
+                    <div
+                        class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                        <a href="../views/vericose_veins.html" class="block px-4 py-2 hover:bg-blue-50">Varicose Veins</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Deep Vein Thrombosis</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Acute Limb Ischemia</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Diabetic Foot & Ulcer</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Gangrene</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Carotid Artery Disease</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Aneurysms</a>
+                    </div>
+                </div>
+
+                <!-- Treatments Dropdown -->
+                <div class="relative group">
+                    <button class="inline-flex items-center bg-primary p-2 text-text">Treatments ▾</button>
+                    <div
+                        class="absolute left-0 mt-2 w-72 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Treatments for Varicose Veins</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">AV Fistula for Dialysis</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Peripheral Angioplasty</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Peripheral Bypass</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Carotid Endarterectomy</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Endovascular Aneurysm Repair</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Thrombolysis for Clots</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">IVC Filter Insertion</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Athrectomy</a>
+                    </div>
+                </div>
+
+                <a href="../views/blogs.html" class="hover:text-blue-600">Blogs</a>
+                <a href="../views/contact.html" class="hover:text-blue-600">Contact Us</a>
+            </nav>
+
+            <!-- Appointment Button -->
+            <a href="../views/appointment.html"
+                class="hidden md:inline-block bg-primary text-text px-4 py-2 rounded-lg hover:bg-blue-700 transition font-medium">
+                Book Appointment
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-3xl text-gray-800 focus:outline-none">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden px-4 pb-6 text-gray-700 font-medium">
+            <a href="../index.html" class="block py-2 border-b hover:text-blue-600">Home</a>
+            <!-- Mobile About Us Dropdown -->
+            <details class="py-2 border-b">
+                <summary class="cursor-pointer hover:text-blue-600">About Us</summary>
+                <div class="pl-4 pt-2 space-y-1">
+                    <!-- <a href="views/about.html" class="block hover:text-blue-500">Overview</a> -->
+                    <a href="../views/ciives.html" class="block hover:text-blue-500">CIIVES</a>
+                    <a href="../views/dr-rohit-gupta.html" class="block hover:text-blue-500">Dr. Rohit Gupta</a>
+                    <a href="../views/dr-kartik-gupta.html" class="block hover:text-blue-500">Dr. Kartik Gupta</a>
+                    <a href="../views/dr-preeti-gupta.html" class="block hover:text-blue-500">Dr. Preeti Gupta</a>
+                </div>
+            </details>
+../
+
+            <!-- Mobile Conditions Dropdown -->
+            <details class="py-2 border-b">
+                <summary class="cursor-pointer hover:text-blue-600">Conditions</summary>
+                <div class="pl-4 pt-2 space-y-1">
+                    <a href="#" class="block hover:text-blue-500">Varicose Veins</a>
+                    <a href="#" class="block hover:text-blue-500">Deep Vein Thrombosis</a>
+                    <a href="#" class="block hover:text-blue-500">Acute Limb Ischemia</a>
+                    <a href="#" class="block hover:text-blue-500">Diabetic Foot & Ulcer</a>
+                    <a href="#" class="block hover:text-blue-500">Gangrene</a>
+                    <a href="#" class="block hover:text-blue-500">Carotid Artery Disease</a>
+                    <a href="#" class="block hover:text-blue-500">Aneurysms</a>
+                </div>
+            </details>
+
+            <!-- Mobile Treatments Dropdown -->
+            <details class="py-2 border-b">
+                <summary class="cursor-pointer hover:text-blue-600">Treatments</summary>
+                <div class="pl-4 pt-2 space-y-1">
+                    <a href="#" class="block hover:text-blue-500">Treatments for Varicose Veins</a>
+                    <a href="#" class="block hover:text-blue-500">AV Fistula for Dialysis</a>
+                    <a href="#" class="block hover:text-blue-500">Peripheral Angioplasty</a>
+                    <a href="#" class="block hover:text-blue-500">Peripheral Bypass</a>
+                    <a href="#" class="block hover:text-blue-500">Carotid Endarterectomy</a>
+                    <a href="#" class="block hover:text-blue-500">Endovascular Aneurysm Repair</a>
+                    <a href="#" class="block hover:text-blue-500">Thrombolysis for Clots</a>
+                    <a href="#" class="block hover:text-blue-500">IVC Filter Insertion</a>
+                    <a href="#" class="block hover:text-blue-500">Athrectomy</a>
+                </div>
+            </details>
+
+            <a href="../views/blogs.html" class="block py-2 border-b hover:text-blue-600">Blogs</a>
+            <a href="../views/contact.html" class="block py-2 border-b hover:text-blue-600">Contact Us</a>
+
+            <a href="../views/appointment.html"
+                class="block text-center mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                Book Appointment
+            </a>
+        </div>
+    </header>
+
+    <!-- Toggle Script -->
+    <script>
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 space-y-12 font-sans text-gray-800">
+
+        <!-- Top Profile -->
+        <section class="flex flex-col md:flex-row items-start gap-8">
+            <!-- Image -->
+            <img src="../assets/images/teams/kartik.png" alt="Dr. Kartik C. Gupta"
+                class="w-48 h-48 object-cover rounded-full shadow-lg border-4 border-blue-700" />
+
+            <!-- Info -->
+            <div>
+                <h1 class="text-4xl font-bold text-blue-800">Dr. Kartik C. Gupta</h1>
+                <p class="text-xl text-gray-600 mt-1">Peripheral Vascular Surgeon</p>
+                <p class="text-sm text-gray-500 mt-1">MBBS, MS (General Surgery), DrNB (Peripheral Vascular Surgery)</p>
+                <div class="mt-4 space-y-1 text-sm">
+                    <p><strong class="text-blue-700">Location:</strong> Central Delhi</p>
+                    <p><strong class="text-blue-700">Phone:</strong> <a href="tel:9403019493"
+                            class="text-blue-600">9403019493</a></p>
+                    <p><strong class="text-blue-700">Email:</strong> <a href="mailto:drkartik.gupta@yahoo.com"
+                            class="text-blue-600">drkartik.gupta@yahoo.com</a></p>
+                    <p><strong class="text-blue-700">Experience:</strong> 8 years 8 months</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4 border-b pb-2">Skills</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Technical Skills</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Doppler for vascular assessment</li>
+                        <li>Endovascular procedures</li>
+                        <li>Chronic wound care</li>
+                        <li>Laparoscopic Surgeries</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Soft Skills</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Attention to detail</li>
+                        <li>Patient counselling</li>
+                        <li>Communication skills</li>
+                        <li>Teamwork</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4 border-b pb-2">Professional Experience</h2>
+            <ul class="space-y-4 text-sm">
+                <li>
+                    <strong>Nov 2021 – March 2022:</strong> Freelance General Surgeon
+                </li>
+                <li>
+                    <strong>Sept 2020 – Oct 2021:</strong> Senior Resident, SRTR-GMC, Ambajogai
+                    <ul class="list-disc list-inside ml-4 text-gray-600">
+                        <li>Open and Laparoscopic procedures</li>
+                        <li>Benign proctologic procedures</li>
+                        <li>COVID ICU – 2 months</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>June 2016 – April 2017:</strong> Fine Morning Hospital and Research Centre, Nagpur
+                    <ul class="list-disc list-inside ml-4 text-gray-600">
+                        <li>Benign Proctology training under Dr. Pravin Gupta</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4 border-b pb-2">Education</h2>
+            <ul class="space-y-3 text-sm">
+                <li><strong>DrNB–SS (2022–2025):</strong> IVES, Sir Ganga Ram Hospital, New Delhi</li>
+                <li><strong>MS – 2018–2020:</strong> MUHS, Nashik — 1st Rank, General Surgery, Laparoscopic & open
+                    surgeries</li>
+                <li><strong>Internship – 2015–2016:</strong> GMC Aurangabad</li>
+                <li><strong>MBBS – 2010–2015:</strong> MUHS, Nashik — 65.2%, Class Topper (2nd Yr), 2nd Rank (3rd Yr)
+                </li>
+            </ul>
+        </section>
+
+        <!-- Achievements -->
+        <section>
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4 border-b pb-2">Achievements & Conferences</h2>
+            <ul class="list-disc list-inside space-y-1 text-sm">
+                <li>Paper & Poster Presentations: VSICON, VAICON, MASICON, AMASICON</li>
+                <li>3rd Rank – Quiz, VSI Mid-Term Conference, Goa 2023</li>
+                <li>Best Intern – General Surgery, GMC Aurangabad, 2015</li>
+                <li>Biomedical Research (ICMR) – 83%, Swayam</li>
+                <li>Delegate – Research Methodology Workshop, 2017</li>
+            </ul>
+        </section>
+
+        <!-- Publications -->
+        <section>
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4 border-b pb-2">Scientific Publications</h2>
+            <ol class="list-decimal list-inside space-y-2 text-sm text-gray-700">
+                <li>Multimodal approach for bilateral iliofemoral DVT – IJVES, 2024</li>
+                <li>Laparoscopic pancreatic pseudocyst – IJMRC, 2022</li>
+                <li>Appendectomy (Open vs Laparoscopic) – Walawalkar Int Med J, 2021</li>
+                <li>Chronic anal fissure – IJMRC, 2022</li>
+                <li>True leiomyoma of prostate – Sri Lanka J Surgery, 2021</li>
+                <li>Abdominal trauma profile – IJMRC, 2021</li>
+                <li>Retrocaval ureter – Int Surgery Journal, 2019</li>
+            </ol>
+        </section>
+
+        <!-- Languages -->
+        <section>
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4 border-b pb-2">Languages Known</h2>
+            <div class="flex flex-wrap gap-4 text-gray-700 text-sm">
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">English</span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Hindi</span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Marathi</span>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-10 pb-6 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Section 1: Site, Logo, Description & Social Links -->
+            <div>
+                <!-- Logo and Title -->
+                <div class="flex items-center space-x-3 mb-4">
+                    <!-- <img src="../assets/images/logo/logo.png" alt="CIIVES Logo" class="h-12 w-auto" /> -->
+                    <h4 class="text-xl font-semibold text-gray-200">CIIVES</h4>
+                </div>
+
+                <!-- Description -->
+                <p class="text-gray-600 mb-4 max-w-xs">
+                    Center for Interventional Vascular and Endovascular Surgery — providing expert care with precision,
+                    technology, and compassion.
+                </p>
+
+                <!-- Website Link -->
+                <p class="mb-2">
+                    Website:
+                    <a href="https://www.ciives.com" target="_blank" class="text-blue-500 hover:underline">
+                        www.ciives.com
+                    </a>
+                </p>
+
+                <!-- Social Links -->
+                <div class="flex space-x-4 mt-4 text-xl">
+                    <a href="#" class="text-blue-600 hover:text-white transition duration-300">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="#" class="text-pink-500 hover:text-white transition duration-300">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="#" class="text-red-600 hover:text-white transition duration-300">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!-- Section 2: Services -->
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Our Services</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-400">Varicose Veins</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Diabetic Foot</a></li>
+                    <li><a href="#" class="hover:text-blue-400">DVT</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Carotid EA</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Aneurysms</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Peripheral Angioplasty</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 3: Map -->
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Visit Us</h4>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <iframe class="w-full h-48"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.939755161134!2d79.06702697477154!3d21.114967884813005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf0c3ad8c14d%3A0x2ea7909c870f8ef3!2sSwasthyam%20Superspeciality%20Hospital!5e0!3m2!1sen!2sin!4v1749546413324!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center text-sm mt-10 text-gray-400 border-t border-gray-700 pt-4">
+            © 2025 CIIVES | All rights reserved.
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
