@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Rohit Kumar Gupta - CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../assets/css/styles.css">
 
@@ -50,7 +51,8 @@
                         class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
 
                         <a href="../views/ciives.html" class="block px-4 py-2 hover:bg-blue-50">CIIVES</a>
-                        <a href="../views/dr-rohit-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Rohit Gupta</a>
+                        <a href="../views/dr-rohit-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Rohit
+                            Gupta</a>
                         <a href="../views/dr-kartik-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Kartik
                             Gupta</a>
                         <a href="../views/dr-preeti-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Preeti
@@ -64,7 +66,8 @@
                     <button class="inline-flex items-center bg-primary p-2 text-text">Conditions ▾</button>
                     <div
                         class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
-                        <a href="../views/vericose_veins.html" class="block px-4 py-2 hover:bg-blue-50">Varicose Veins</a>
+                        <a href="../views/vericose_veins.html" class="block px-4 py-2 hover:bg-blue-50">Varicose
+                            Veins</a>
                         <a href="#" class="block px-4 py-2 hover:bg-blue-50">Deep Vein Thrombosis</a>
                         <a href="#" class="block px-4 py-2 hover:bg-blue-50">Acute Limb Ischemia</a>
                         <a href="#" class="block px-4 py-2 hover:bg-blue-50">Diabetic Foot & Ulcer</a>
@@ -122,6 +125,7 @@
                 </div>
             </details>
 
+
             <!-- Mobile Conditions Dropdown -->
             <details class="py-2 border-b">
                 <summary class="cursor-pointer hover:text-blue-600">Conditions</summary>
@@ -171,131 +175,238 @@
         });
     </script>
 
-    <!-- Main Container -->
-    <main class="max-w-5xl mx-auto px-4 py-10 space-y-10">
+    <section class="px-4 py-16 bg-gray-50 text-gray-800 max-w-7xl mx-auto space-y-16">
 
-        <!-- Contact Info -->
-        <section class="relative bg-gradient-to-r from-blue-50 via-white to-blue-100 py-16 px-6 overflow-hidden">
-            <!-- Decorative Gradient Background -->
-            <div class="absolute inset-0 z-0 pointer-events-none">
-                <div
-                    class="absolute top-0 left-0 w-72 h-72 bg-blue-300 opacity-10 rounded-full filter blur-3xl animate-pulse">
-                </div>
-                <div
-                    class="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 opacity-10 rounded-full filter blur-2xl animate-pulse">
-                </div>
-            </div>
-
-            <!-- Content Container -->
-            <div class="relative z-10 max-w-4xl mx-auto text-center">
-                <h1
-                    class="text-4xl md:text-5xl font-extrabold text-blue-900 tracking-tight drop-shadow-lg animate-fadeInUp">
-                    Curriculum Vitae
-                </h1>
-                <p class="mt-4 text-2xl font-semibold text-blue-700 animate-fadeInUp delay-100">
-                    Dr. Rohit Kumar Gupta
+        <!-- === 1st Div: Basic Profile === -->
+        <div
+            class="flex flex-col md:flex-row gap-10 items-center bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 p-8">
+            <!-- Left -->
+            <div class="md:w-2/3 space-y-4">
+                <h1 class="text-3xl font-bold text-primary">Dr. Rohit Kumar Gupta</h1>
+                <h3 class="text-lg font-semibold">M.B.B.S., DNB (Gen. Surgery), DNB (Peripheral Vascular Surgery)</h3>
+                <p class="text-sm">
+                    Director & Incharge, Dept. of Vascular & Endovascular Surgery,<br />
+                    Swasthyam Superspeciality Hospital, Nagpur
                 </p>
-                <p class="mt-2 text-base md:text-lg text-gray-700 animate-fadeInUp delay-200">
-                    M.B.B.S., DNB (Gen. Surgery), DNB (Peripheral Vascular Surgery)
+                <p class="font-medium text-blue-600 mt-2">Mobile: <a href="tel:+919823411484">+91-9823411484</a></p>
+            </div>
+
+            <!-- Right -->
+            <div class="md:w-1/3 flex justify-center">
+                <img src="/assets/images/teams/doc.jpeg" alt="Dr. Rohit Gupta"
+                    class="w-60 h-60 rounded-full object-cover shadow-lg ring-4 ring-primary ring-offset-2" />
+            </div>
+        </div>
+
+        <!-- === 2nd Div: Details === -->
+        <div
+            class="flex flex-col lg:flex-row gap-12 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 p-8">
+
+            <!-- Left1: Multiple Info Boxes -->
+            <div class="lg:w-2/3 space-y-10">
+
+                <!-- Education -->
+                <div class="bg-gray-50 p-5 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-primary mb-2">Education</h3>
+                    <ul class="list-disc pl-6 space-y-1 text-sm">
+                        <li>2013: DrNB (Peripheral Vascular Surgery) - Sir Ganga Ram Hospital, New Delhi</li>
+                        <li>2007: DNB (Gen. Surgery) - JLN Hospital, Bhilai</li>
+                        <li>2001: MBBS - GMC, Odisha</li>
+                    </ul>
+                </div>
+
+                <!-- Accolades -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Accolades</h3>
+                    <ul class="list-disc pl-6 text-sm space-y-2">
+                        <li><span class="font-medium">Life Member:</span> Diabetic Foot Society of India</li>
+                        <li><span class="font-medium">Life Member:</span> Indian Podiatry Association</li>
+                        <li><span class="font-medium">Invited Faculty:</span> PEDICON 2017</li>
+                        <li><span class="font-medium">Invited Faculty:</span> EVL Live 2015 & 2017</li>
+                        <li><span class="font-medium">Invited Faculty:</span> VSICON 2014</li>
+                        <li>Won <span class="font-medium">2nd Prize</span> in VSI Rolling Trophy at Mid-term Conference,
+                            Chennai – June 2012</li>
+                    </ul>
+                </div>
+
+                <!-- Scientific Papers -->
+                <div class="bg-gray-50 p-5 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-primary mb-2">Scientific Papers</h3>
+                    <ul class="list-disc pl-6 space-y-1 text-sm">
+                        <li>Assessment of abdominal aortic diameter in Indian population, The Ganga Ram Journal 2013,
+                            Vol.3, No.2:4-9.</li>
+                        <li>Doppler Ultrasound. The Ganga Ram Journal 2012; Vol.2, No.3: 151-154.</li>
+                    </ul>
+                </div>
+
+
+                <!-- Conferences -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Conferences</h3>
+
+                    <div class="space-y-4 text-sm">
+                        <!-- Paper Presentations -->
+                        <div>
+                            <h4 class="text-lg font-semibold mb-2">Paper Presentations:</h4>
+                            <ul class="list-disc pl-6 space-y-1">
+                                <li>Study of Abdominal Aortic Size in Indian Population – 7th Asian Conference,
+                                    Singapore, 22–25th July 2013</li>
+                                <li>Study of Abdominal Aortic Diameter in Indian Population – VSICON-2012, Annual VSI
+                                    Conference, Jaipur</li>
+                                <li>“Catheter-directed Thrombolysis in Acute DVT” – Mid-term VSI Conference, Chennai,
+                                    June 2012</li>
+                                <li>“Review of TASC Guidelines: What does it mean to us? Do we follow them?” – VSI
+                                    Mid-term Conference, Goa, 2011</li>
+                                <li>IVC & Iliac Venoplasty – VSI Mid-term Conference, Goa, 2011</li>
+                                <li>Role of Infra-Inguinal Angioplasty in Patients of Critical Limb Ischemia – VSI
+                                    Mid-term Conference, Goa, 2010</li>
+                            </ul>
+                        </div>
+
+                        <!-- Poster Presentations -->
+                        <div>
+                            <h4 class="text-lg font-semibold mb-2">Poster Presentations:</h4>
+                            <ul class="list-disc pl-6 space-y-1">
+                                <li>Renal AVM – VSICON-2012, Annual VSI Conference, Jaipur</li>
+                                <li>Bronchial Artery Embolisation – VSICON-2011, Mumbai</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Areas of Expertise -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Areas of Expertise</h3>
+
+                    <!-- Peripheral Arterial Disease -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-2">Peripheral Arterial Disease (PAD) / Leg Artery Blockage
+                        </h4>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Angioplasty and stenting (to open blocked arteries)</li>
+                            <li>Surgical bypass (femoral-popliteal, aorto-femoral)</li>
+                            <li>Embolectomy or thrombectomy (for sudden arterial blockage)</li>
+                            <li>Limb salvage surgeries for critical limb ischemia</li>
+                        </ul>
+                    </div>
+
+                    <!-- Diabetic Foot -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-2">Diabetic Foot, Ulcers & Limb Salvage</h4>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Wound cleaning and debridement</li>
+                            <li>Minor and major amputations (if needed)</li>
+                            <li>Revascularisation procedures to restore blood flow</li>
+                            <li>Comprehensive foot care and ulcer management</li>
+                        </ul>
+                    </div>
+
+                    <!-- Dialysis Access -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-2">Dialysis Access for Kidney Failure Patients</h4>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>AV fistula creation (RC, BC, BB types)</li>
+                            <li>AV graft insertion</li>
+                            <li>Fistuloplasty (to reopen a blocked fistula)</li>
+                            <li>Permcath (tunnelled dialysis catheter) placement</li>
+                            <li>Chemoport insertion (for cancer treatment access)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Aortic Aneurysms -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-2">Aortic Aneurysms (Ballooning of Artery)</h4>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>EVAR (Endovascular Aneurysm Repair – minimally invasive)</li>
+                            <li>Open surgical repair (for large or complex aneurysms)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Carotid Artery -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-2">Carotid Artery Disease & Stroke Prevention</h4>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Carotid endarterectomy (surgical plaque removal)</li>
+                            <li>Carotid artery stenting (to prevent strokes)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Varicose Veins -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-2">Varicose Veins & Chronic Venous Insufficiency</h4>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Endovenous Laser Treatment (EVLT)</li>
+                            <li>Radiofrequency Ablation (RFA)</li>
+                            <li>Foam sclerotherapy</li>
+                            <li>Surgical vein removal (ligation & stripping, if needed)</li>
+                            <li>Venoplasty & stenting for deep vein blockages</li>
+                        </ul>
+                    </div>
+
+                    <!-- DVT & Pulmonary Embolism -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-2">Deep Vein Thrombosis (DVT) & Pulmonary Embolism</h4>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Catheter-directed thrombolysis (clot-dissolving treatment)</li>
+                            <li>Mechanical thrombectomy (clot removal)</li>
+                            <li>IVC filter placement (to prevent clots from reaching lungs)</li>
+                            <li>Venous stenting for narrowed or blocked veins</li>
+                        </ul>
+                    </div>
+
+                    <!-- Vascular Trauma -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-2">Vascular Trauma & Emergencies</h4>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Emergency open vascular repair</li>
+                            <li>Endovascular control for bleeding or injuries</li>
+                        </ul>
+                    </div>
+
+                    <!-- Thoracic Outlet Syndrome -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-2">Thoracic Outlet Syndrome</h4>
+                        <ul class="list-disc pl-6 space-y-1 text-sm">
+                            <li>Decompression surgery to relieve vessel compression</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- Right1: About -->
+            <div class="lg:w-1/3 bg-gray-50 p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold text-primary mb-2">About</h3>
+                <p class="text-sm leading-relaxed">
+                    Dr. Rohit Gupta is a seasoned Vascular and Endovascular Surgeon with over 23 years of clinical
+                    expertise,
+                    currently leading CIIVES at Swasthyam Superspeciality Hospital, Nagpur. With prior experience at
+                    Tata Memorial
+                    Hospital and several leading institutes in Nagpur, Dr. Rohit is known for his precision,
+                    patient-first approach,
+                    and ethical care.
+                    <br><br>
+                    Trained at Sir Ganga Ram Hospital, Delhi, he is proficient in procedures like angioplasty, EVAR,
+                    varicose vein
+                    laser treatment, and complex bypass surgeries. He also heads the Diabetic Foot Care Centre, offering
+                    holistic
+                    limb salvage solutions.
+                    <br><br>
+                    He has presented at national and international conferences and contributed research on stem cell
+                    therapy,
+                    thrombolysis, and aortic diseases. He is a life member of the Diabetic Foot Society of India and the
+                    Indian
+                    Podiatry Association.
                 </p>
-                <div class="mt-6 mx-auto w-24 h-1 bg-blue-600 rounded-full animate-scaleIn"></div>
             </div>
-        </section>
 
-        <section>
-            <h2 class="text-xl font-semibold text-blue-700 border-b pb-1 mb-3">Contact Information</h2>
-            <div class="grid md:grid-cols-2 gap-4 text-sm">
-                <div>
-                    <p><strong>Email:</strong> rkgupta124@gmail.com</p>
-                    <p><strong>Mobile:</strong> +91-9823411484</p>
-                    <p><strong>Date of Birth:</strong> 11/02/1976</p>
-                    <p><strong>Medical Reg. No:</strong> 42253 (Delhi), 2015020684 (MMC)</p>
-                </div>
-                <div>
-                    <p><strong>Contact Address:</strong><br>
-                        Row House No.33, Jayanti Nagari-3, New Manish Nagar, Beltarodi, Nagpur, Maharashtra - 440005</p>
-                    <p><strong>Permanent Address:</strong><br>
-                        Shri Sadan, 160 Arya Nagar, Durg, C.G. - 491001</p>
-                </div>
-            </div>
-        </section>
+        </div>
 
-        <!-- Career History -->
-        <section>
-            <h2 class="text-xl font-semibold text-blue-700 border-b pb-1 mb-3">Career History</h2>
-            <ul class="list-disc pl-5 space-y-2 text-sm">
-                <li><strong>Dec 2020 – Present:</strong> Director & Incharge, Dept. of Vascular & Endovascular Surgery,
-                    Swasthyam Superspeciality Hospital, Nagpur</li>
-                <li><strong>May 2013 – Nov 2019:</strong> Consultant, Orange City Hospital, Nagpur and Associate
-                    Consultant in Alexis, Getwell, Meditrina & Neuron Hospitals</li>
-                <li><strong>Apr 2010 – Apr 2013:</strong> DNB Super Speciality, Peripheral Vascular & Endovascular
-                    Surgery, Sir Ganga Ram Hospital, Delhi</li>
-                <li><strong>Feb 2009 – Apr 2010:</strong> Senior Registrar, Vascular Surgery, Sir Ganga Ram Hospital
-                </li>
-                <li><strong>Jun 2008 – Feb 2009:</strong> Senior Registrar, Surgical Oncology, Tata Memorial Hospital,
-                    Mumbai</li>
-                <li><strong>Apr 2007 – Jun 2008:</strong> Senior Registrar, Apollo & Soumya Hospital, Secunderabad</li>
-                <li><strong>Apr 2004 – Apr 2007:</strong> Resident Doctor (DNB Gen. Surgery), JLN Hospital, Bhilai</li>
-                <li><strong>Dec 2002 – Dec 2003:</strong> Medical Officer, PHC Aondhi, Rajnandgaon</li>
-                <li><strong>Aug 1996 – Aug 2001:</strong> M.B.B.S., GMC, Odisha</li>
-            </ul>
-        </section>
+    </section>
 
-        <!-- Conferences & Workshops -->
-        <section>
-            <h2 class="text-xl font-semibold text-blue-700 border-b pb-1 mb-3">Workshops / CME / Conferences</h2>
-            <ul class="list-decimal pl-5 space-y-1 text-sm max-h-96 overflow-y-auto">
-                <li>Life Member: Diabetic Foot Society of India & Indian Podiatry Association</li>
-                <li>Invited Faculty: PEDICON 2017, EVL Live 2015 & 2017, VSICON 2014, and many more</li>
-                <li>Attendee: 7th Asian Vascular Conference, Singapore (2013), European Vascular Conference, Netherlands
-                    (2013)</li>
-                <li>VSICON Conferences: 2011–2014</li>
-                <li>Endovascular Workshops: Sir Ganga Ram Hospital, MAMC, Chennai, Goa, etc.</li>
-            </ul>
-        </section>
-
-        <!-- Publications -->
-        <section>
-            <h2 class="text-xl font-semibold text-blue-700 border-b pb-1 mb-3">Publications & Presentations</h2>
-            <ul class="list-disc pl-5 text-sm space-y-1 max-h-96 overflow-y-auto">
-                <li>Multiple papers published in Ganga Ram Journal & Indian Journal of Surgery</li>
-                <li>Presented at Asian Conference, VSICON, and VSI Mid-Term conferences</li>
-                <li>Won 2nd Prize in VSI Rolling Trophy, Chennai, 2012</li>
-            </ul>
-        </section>
-
-        <!-- Research -->
-        <section>
-            <h2 class="text-xl font-semibold text-blue-700 border-b pb-1 mb-3">Clinical Research & Audits</h2>
-            <p class="text-sm mb-2"><strong>Audits:</strong> Monthly surgical audits at Sir Ganga Ram Hospital</p>
-            <p class="text-sm mb-2"><strong>Trials:</strong> Co-investigator in JTCS-002, assisted in Stem Cell Therapy,
-                Einstein, Recover, Remedy, Plasmin trials</p>
-        </section>
-
-        <!-- Thesis -->
-        <section>
-            <h2 class="text-xl font-semibold text-blue-700 border-b pb-1 mb-3">Postgraduate Research / Thesis</h2>
-            <ul class="list-disc pl-5 text-sm space-y-1">
-                <li>Topical Nitroglycerine vs. Lateral Internal Sphincterotomy in Anal Fissure</li>
-                <li>Study of Abdominal Aortic Diameter in Indian Population</li>
-            </ul>
-        </section>
-
-        <!-- Work Profile -->
-        <section>
-            <h2 class="text-xl font-semibold text-blue-700 border-b pb-1 mb-3">Work Profile</h2>
-            <ul class="list-disc pl-5 text-sm space-y-1">
-                <li><strong>Endovascular Procedures:</strong> Angioplasty, EVAR, Embolization, Carotid stenting, etc.
-                </li>
-                <li><strong>Venous Interventions:</strong> EVLT, RFA, Thrombolysis, IVC Filter</li>
-                <li><strong>Surgical Procedures:</strong> AV Fistula, Bypass surgeries, Carotid Endarterectomy, Varicose
-                    vein surgery, etc.</li>
-                <li><strong>Other Skills:</strong> Color Doppler, Chemoport/Dialysis catheter insertion, Vascular trauma
-                    care</li>
-                <li>Manages Diabetic Foot Care Centre (DFCC)</li>
-            </ul>
-        </section>
-    </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white pt-10 pb-6 px-4">
@@ -311,7 +422,8 @@
 
                 <!-- Description -->
                 <p class="text-gray-200 mb-4 max-w-xs">
-                    Central India Institute of Vascular and Endovascular Sciences — providing expert care with precision,
+                    Central India Institute of Vascular and Endovascular Sciences — providing expert care with
+                    precision,
                     technology, and compassion.
                 </p>
 
