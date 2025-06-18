@@ -4,21 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CIIVES</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <!-- Remix Icon CDN -->
+    <title>Dr. Preeti Gupta</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../assets/css/styles.css">
+
 </head>
 
-<body class="bg-gray-100 text-gray-800">
-
-
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
 
     <!-- Top Bar -->
     <div class="bg-primary text-white text-sm py-2 px-4">
@@ -182,214 +175,37 @@
         });
     </script>
 
+    <section class="px-4 py-16 bg-gray-50 text-gray-800 max-w-7xl mx-auto space-y-16">
 
+        <!-- === 1st Div: Basic Profile - Dr. Kartik Gupta === -->
+        <div
+            class="flex flex-col md:flex-row gap-10 items-center bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 p-8">
 
-    <main>
-        <!-- About CIIVES Section -->
-        <section class="bg-gray-50 py-16 px-6" id="about-ciives">
-            <div class="max-w-5xl mx-auto text-center">
-                <h2 class="text-4xl font-bold text-primary mb-4">About CIIVES</h2>
-                <p class="text-gray-700 text-lg mb-6 font-medium">Central India’s first and only dedicated vascular
-                    centre providing complete vascular care under one roof!</p>
-
-                <div class="text-left max-w-3xl mx-auto">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Why CIIVES?</h3>
-                    <ul class="list-disc pl-6 text-gray-700 text-base space-y-3 p-6 rounded-xl">
-                        <li><strong>NABH-accredited hospital</strong> ensuring the highest quality and safety standards
-                        </li>
-                        <li>Dedicated operation theatre & fully functional Cath Lab</li>
-                        <li>State-of-the-art facility – Laser, advanced Doppler machine, intravenous ultrasound, etc.
-                        </li>
-                        <li>Both open & endovascular procedures by vascular super-specialists</li>
-                        <li>A dedicated <strong>Diabetic Foot Care Clinic (DFCC)</strong></li>
-                        <li><strong>Ethical & transparent care</strong> – no unnecessary tests or surgeries</li>
-                        <li><strong>Day-care procedures</strong> – return home the same day for many treatments</li>
-                        <li><strong>Timely intervention</strong> for emergency care</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Team Section -->
-        <section class="bg-white py-16 px-6" id="team">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-4xl font-bold text-center text-primary mb-6">Meet Our Experts</h2>
-                <p class="text-center text-gray-600 text-lg max-w-3xl mx-auto mb-12">
-                    At CIIVES, your care is led by <strong>vascular surgeons trained at the prestigious Sir Ganga Ram
-                        Hospital, New Delhi</strong>, and certified diabetic foot care experts. Their extensive 3-year
-                    DrNB super-speciality program in vascular surgery makes them the most qualified to manage complex
-                    cases and emergencies with precision.
+            <!-- Left -->
+            <div class="md:w-2/3 space-y-4">
+                <h1 class="text-3xl font-bold text-primary">Dr. Preeti Gupta</h1>
+                <h3 class="text-lg font-semibold">MBBS, DNB, FDFM (IPA)</h3>
+                <p class="text-sm">
+                    Consultant, CIIVES,<br />
+                    Swasthyam Superspeciality Hospital, Nagpur
                 </p>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-
-                    <!-- Dr. Rohit Gupta -->
-                    <div
-                        class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300">
-                        <img src="/assets/images/teams/Dr Rohit Gupta.jpg" alt="Dr. Rohit Gupta"
-                            class="w-32 h-32 rounded-full mx-auto object-cover mb-4 shadow-md">
-                        <h3 class="text-xl font-semibold text-gray-800">Dr. Rohit Gupta</h3>
-                        <p class="text-sm text-blue-700 mb-2">MBBS, DNB, DrNB</p>
-                        <!-- <p class="text-gray-600 text-sm leading-relaxed">
-                            Expert in image-guided vascular interventions, delivering ethical and patient-focused care.
-                        </p> -->
-                    </div>
-
-                    <!-- Dr. Kartik Gupta -->
-                    <div
-                        class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300">
-                        <img src="/assets/images/teams/Dr Kartik Gupta.jpg" alt="Dr. Kartik Gupta"
-                            class="w-32 h-32 rounded-full mx-auto object-cover mb-4 shadow-md">
-                        <h3 class="text-xl font-semibold text-gray-800">Dr. Kartik Gupta</h3>
-                        <p class="text-sm text-blue-700 mb-2"> MBBS, MS, DrNB </p>
-                        <!-- <p class="text-gray-600 text-sm leading-relaxed">
-                            Specialist in minimally invasive endovascular procedures with advanced diagnostic expertise.
-                        </p> -->
-                    </div>
-
-                    <!-- Dr. Preeti Gupta -->
-                    <div
-                        class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300">
-                        <img src="/assets/images/teams/Dr Preeti Gupta.jpg" alt="Dr. Preeti Gupta"
-                            class="w-32 h-32 rounded-full mx-auto object-cover mb-4 shadow-md">
-                        <h3 class="text-xl font-semibold text-gray-800">Dr. Preeti Gupta</h3>
-                        <p class="text-sm text-pink-600 mb-2">MBBS, DNB, FDFM (IPA)</p>
-                        <!-- <p class="text-gray-600 text-sm leading-relaxed">
-                            Renowned for diabetic foot management and advanced imaging-led precision treatment.
-                        </p> -->
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Treatments Performed - Table Format -->
-        <section class="bg-gray-50 py-16 px-6">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-4xl font-bold text-primary text-center mb-12">Treatments Performed</h2>
-
-                <div class="overflow-x-auto">
-                    <table class="min-w-full border border-gray-300 bg-white rounded-xl overflow-hidden shadow-lg">
-                        <thead class="bg-primary text-white">
-                            <tr>
-                                <th class="text-left px-6 py-4 text-lg font-semibold">Category</th>
-                                <th class="text-left px-6 py-4 text-lg font-semibold">Conditions</th>
-                                <th class="text-left px-6 py-4 text-lg font-semibold">Treatment Options</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-sm text-gray-800">
-                            <!-- Venous Diseases -->
-                            <tr class="border-t border-gray-200">
-                                <td class="px-6 py-4 font-bold text-primary align-top">Venous Diseases</td>
-                                <td class="px-6 py-4 align-top">
-                                    <ul class="list-disc pl-4 space-y-1">
-                                        <li>Varicose veins</li>
-                                        <li>Deep vein thrombosis & Post-thrombotic syndrome</li>
-                                    </ul>
-                                </td>
-                                <td class="px-6 py-4 align-top">
-                                    <ul class="list-disc pl-4 space-y-1">
-                                        <li>Laser ablation</li>
-                                        <li>Radiofrequency ablation</li>
-                                        <li>Glue ablation</li>
-                                        <li>Sclerotherapy</li>
-                                        <li>Thrombolysis</li>
-                                        <li>Thrombectomy</li>
-                                        <li>Thrombotic aspiration</li>
-                                    </ul>
-                                </td>
-                            </tr>
-
-                            <!-- Arterial Diseases -->
-                            <tr class="border-t border-gray-200">
-                                <td class="px-6 py-4 font-bold text-primary align-top">Arterial Diseases</td>
-                                <td class="px-6 py-4 align-top">
-                                    <ul class="list-disc pl-4 space-y-1">
-                                        <li>Carotid artery diseases</li>
-                                        <li>Aneurysms</li>
-                                        <li>Critical limb ischemia</li>
-                                        <li>Acute limb ischemia</li>
-                                        <li>Diabetic foot & gangrene</li>
-                                        <li>Pulmonary embolism</li>
-                                    </ul>
-                                </td>
-                                <td class="px-6 py-4 align-top">
-                                    <ul class="list-disc pl-4 space-y-1">
-                                        <li>Carotid endarterectomy surgery</li>
-                                        <li>Carotid artery stenting</li>
-                                        <li>Endovascular/open repair</li>
-                                        <li>Peripheral angioplasty</li>
-                                        <li>Peripheral stenting</li>
-                                        <li>Peripheral atherectomy</li>
-                                        <li>Peripheral bypass</li>
-                                        <li>Embolectomy</li>
-                                        <li>Thrombolysis</li>
-                                        <li>Advanced wound care</li>
-                                        <li>Thrombosuction</li>
-                                        <li>Catheter-directed thrombolysis</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Diabetic Foot Care Clinic Section -->
-        <section class="bg-white py-16 px-6">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-4xl font-bold text-primary text-center mb-6">Diabetic Foot Care Clinic</h2>
-                <p class="text-center text-lg text-gray-600 mb-10">
-                    An advanced facility, equipped for the detection, prevention, and rehabilitation of diabetic foot.
+                <p class="font-medium text-blue-600 mt-2">
+                    <!-- Mobile: <a href="tel:+919270292937">+91-9270292937</a> -->
                 </p>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    <!-- Column 1 -->
-                    <div class="bg-gray-50 p-6 rounded-2xl shadow-md">
-                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Wound Care & Therapies</h4>
-                        <ul class="list-disc pl-5 text-sm text-gray-700 space-y-1">
-                            <li>Comprehensive evaluation</li>
-                            <li>Advanced wound care</li>
-                            <li>Negative pressure wound therapy</li>
-                            <li>Topical oxygen therapy</li>
-                            <li>PRP therapy</li>
-                            <li>Lympha press</li>
-                            <li>ART assist</li>
-                        </ul>
-                    </div>
-
-                    <!-- Column 2 -->
-                    <div class="bg-gray-50 p-6 rounded-2xl shadow-md">
-                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Orthotics & Footwear</h4>
-                        <ul class="list-disc pl-5 text-sm text-gray-700 space-y-1">
-                            <li>Footwear for diabetic foot care</li>
-                            <li>Gait analysis & its correction</li>
-                            <li>Woundcare orthotics</li>
-                            <li>Offloading insoles</li>
-                            <li>Peg assist</li>
-                            <li>Airwalker</li>
-                        </ul>
-                    </div>
-
-                    <!-- Column 3 -->
-                    <div class="bg-gray-50 p-6 rounded-2xl shadow-md">
-                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Prosthetics</h4>
-                        <ul class="list-disc pl-5 text-sm text-gray-700 space-y-1">
-                            <li>Silicon foot prosthesis</li>
-                            <li>Toe prosthesis</li>
-                            <li>Below-knee prosthesis</li>
-                            <li>Above-knee prosthesis</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-        </section>
 
-    </main>
+            <!-- Right -->
+            <div class="md:w-1/3 flex justify-center">
+                <img src="/assets/images/teams/Dr Preeti Gupta.jpg" alt="Dr. Kartik Gupta"
+                    class="w-60 h-60 rounded-full object-cover shadow-lg ring-4 ring-primary ring-offset-2" />
+            </div>
+        </div>
+
+
+        
+
+    </section>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white pt-10 pb-6 px-4">
@@ -461,11 +277,6 @@
         </div>
     </footer>
 
-
-    <!-- GSAP Animations -->
-    <script src="../assets/js/gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>
