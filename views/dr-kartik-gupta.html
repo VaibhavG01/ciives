@@ -536,6 +536,27 @@
         </div>
     </footer>
 
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            gsap.to("#profileLeft", {
+                x: 0,
+                opacity: 1,
+                duration: 1.2,
+                delay: 0.2,
+                ease: "power3.out",
+                from: { x: -100 }
+            });
+
+            gsap.to("#profileRight", {
+                x: 0,
+                opacity: 1,
+                duration: 1.2,
+                delay: 0.4,
+                ease: "power3.out",
+                from: { x: 100 }
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -214,31 +214,6 @@
             </div>
         </div>
 
-        <!-- GSAP Animation Script -->
-        <script>
-            window.addEventListener("DOMContentLoaded", () => {
-                gsap.to("#profileLeft", {
-                    x: 0,
-                    opacity: 1,
-                    duration: 1.2,
-                    delay: 0.2,
-                    ease: "power3.out",
-                    from: { x: -100 }
-                });
-
-                gsap.to("#profileRight", {
-                    x: 0,
-                    opacity: 1,
-                    duration: 1.2,
-                    delay: 0.4,
-                    ease: "power3.out",
-                    from: { x: 100 }
-                });
-            });
-        </script>
-
-
-
         <!-- === 2nd Div: Details === -->
         <div
             class="flex flex-col lg:flex-row gap-12 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 p-8">
@@ -543,6 +518,26 @@
     </footer>
 
     <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            gsap.to("#profileLeft", {
+                x: 0,
+                opacity: 1,
+                duration: 1.2,
+                delay: 0.2,
+                ease: "power3.out",
+                from: { x: -100 }
+            });
+
+            gsap.to("#profileRight", {
+                x: 0,
+                opacity: 1,
+                duration: 1.2,
+                delay: 0.4,
+                ease: "power3.out",
+                from: { x: 100 }
+            });
+        });
+        
         gsap.from(".lg\\:block", {
             opacity: 0,
             x: -30,
