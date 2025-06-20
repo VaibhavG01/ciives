@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 </head>
 
@@ -177,73 +179,131 @@
 
     <section class="px-4 py-16 bg-gray-50 text-gray-800 max-w-7xl mx-auto space-y-16">
 
+
+
         <!-- === 1st Div: Basic Profile === -->
-        <div
-            class="flex flex-col md:flex-row gap-10 items-center bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 p-8">
-            <!-- Left -->
-            <div class="md:w-2/3 space-y-4">
-                <h1 class="text-3xl font-bold text-primary">Dr. Rohit Kumar Gupta</h1>
-                <h3 class="text-lg font-semibold">M.B.B.S., DNB (Gen. Surgery),<br> DrNB (Peripheral Vascular Surgery)</h3>
-                <p class="text-sm">
-                    Director & Incharge, CIIVES,<br> Swasthyam Super-speciality Hospital, Nagpur
+        <div id="profileSection"
+            class="relative bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-2xl p-10 md:flex items-center gap-12 overflow-visible hover:shadow-blue-200 transition duration-500">
+
+            <!-- Left Content -->
+            <div id="profileLeft" class="md:w-2/3 space-y-4 opacity-0">
+                <h1 class="text-3xl font-extrabold text-[#1D3156]">Dr. Rohit Kumar Gupta</h1>
+                <h3 class="text-lg font-semibold text-gray-800">
+                    M.B.B.S., DNB (Gen. Surgery),<br>
+                    DrNB (Peripheral Vascular Surgery)
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Director & Incharge, CIIVES,<br>
+                    Swasthyam Super-speciality Hospital, Nagpur
                 </p>
-                <p class="font-medium text-blue-600 mt-2">Mobile: <a href="tel:+919823411484">+91-9823411484</a></p>
+                <p class="font-medium text-blue-700">
+                    Mobile: <a href="tel:+919823411484" class="hover:underline">+91-9823411484</a>
+                </p>
+                <a href="appointment.html"
+                    class="inline-block bg-[#1D3156] text-white px-6 py-2 mt-2 rounded-full shadow hover:bg-blue-900 transition duration-300">
+                    Book Appointment
+                </a>
             </div>
 
-            <!-- Right -->
-            <div class="md:w-1/3 flex justify-center">
-                <img src="/assets/images/teams/Dr Rohit Gupta.jpg" alt="Dr. Rohit Gupta"
-                    class="w-60 h-60 rounded-full object-cover shadow-lg ring-4 ring-primary ring-offset-2" />
+            <!-- Right Image with Badge -->
+            <div id="profileRight" class="md:w-1/3 relative flex justify-center opacity-0">
+                <div class="relative z-0">
+                    <img src="/assets/images/teams/Dr Rohit Gupta.jpg" alt="Dr. Rohit Gupta"
+                        class="w-72 h-72 object-cover rounded-full shadow-lg ring-4 ring-primary ring-offset-2 transition-transform duration-500 hover:scale-105">
+                </div>
             </div>
         </div>
+
+        <!-- GSAP Animation Script -->
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                gsap.to("#profileLeft", {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1.2,
+                    delay: 0.2,
+                    ease: "power3.out",
+                    from: { x: -100 }
+                });
+
+                gsap.to("#profileRight", {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1.2,
+                    delay: 0.4,
+                    ease: "power3.out",
+                    from: { x: 100 }
+                });
+            });
+        </script>
+
+
 
         <!-- === 2nd Div: Details === -->
         <div
             class="flex flex-col lg:flex-row gap-12 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 p-8">
 
-            <!-- Right1: About -->
-            <div class="lg:w-1/3 p-6 rounded-xl shadow-md">
-                <h3 class="text-xl font-bold text-primary mb-2">About</h3>
-                <p class="text-sm leading-relaxed">
-                    Dr. Rohit Gupta is a seasoned Vascular and Endovascular Surgeon with over 23 years of clinical
-                    expertise,
-                    currently leading CIIVES at Swasthyam Superspeciality Hospital, Nagpur. With prior experience at
-                    Tata Memorial
-                    Hospital and several leading institutes in Nagpur, Dr. Rohit is known for his precision,
-                    patient-first approach,
-                    and ethical care.
-                    <br><br>
-                    Trained at Sir Ganga Ram Hospital, Delhi, he is proficient in procedures like angioplasty, EVAR,
-                    varicose vein
-                    laser treatment, and complex bypass surgeries. He also heads the Diabetic Foot Care Centre, offering
-                    holistic
-                    limb salvage solutions.
-                    <br><br>
-                    He has presented at national and international conferences and contributed research on stem cell
-                    therapy,
-                    thrombolysis, and aortic diseases. He is a life member of the Diabetic Foot Society of India and the
-                    Indian
-                    Podiatry Association.
-                    <br><br>
-                    <strong>Languages:</strong> English, Hindi, Marathi
-                </p>
+            <!-- Right1: Quick Navigation -->
+            <div class="hidden lg:block lg:w-1/3 p-6 rounded-xl shadow-md bg-white space-y-4 sticky top-24 h-fit">
+                <h3 class="text-xl font-bold text-primary mb-2">Quick Navigation</h3>
+                <ul class="space-y-2 list-disc list-inside text-sm text-blue-700 font-medium">
+                    <li><a href="#about" class="hover:underline">About</a></li>
+                    <li><a href="#education" class="hover:underline">Education</a></li>
+                    <li><a href="#accolades" class="hover:underline">Accolades</a></li>
+                    <li><a href="#papers" class="hover:underline">Scientific Papers</a></li>
+                    <li><a href="#conferences" class="hover:underline">Conferences</a></li>
+                    <li><a href="#expertise" class="hover:underline">Areas of Expertise</a></li>
+                </ul>
             </div>
+
+
 
             <!-- Left1: Multiple Info Boxes -->
             <div class="lg:w-2/3 space-y-10">
 
+                <!-- About -->
+                <div id="about" data-gsap class="bg-gray-50 p-5 rounded-xl shadow-md">
+                    <h3 id="about" class="text-xl font-bold text-primary mb-2">About</h3>
+                    <p class="text-sm leading-relaxed">
+                        Dr. Rohit Gupta is a seasoned Vascular and Endovascular Surgeon with over 23 years of clinical
+                        expertise,
+                        currently leading CIIVES at Swasthyam Superspeciality Hospital, Nagpur. With prior experience at
+                        Tata Memorial
+                        Hospital and several leading institutes in Nagpur, Dr. Rohit is known for his precision,
+                        patient-first approach,
+                        and ethical care.
+                        <br><br>
+                        Trained at Sir Ganga Ram Hospital, Delhi, he is proficient in procedures like angioplasty, EVAR,
+                        varicose vein
+                        laser treatment, and complex bypass surgeries. He also heads the Diabetic Foot Care Centre,
+                        offering
+                        holistic
+                        limb salvage solutions.
+                        <br><br>
+                        He has presented at national and international conferences and contributed research on stem cell
+                        therapy,
+                        thrombolysis, and aortic diseases. He is a life member of the Diabetic Foot Society of India and
+                        the
+                        Indian
+                        Podiatry Association.
+                        <br><br>
+                        <strong>Languages:</strong> English, Hindi, Marathi
+                    </p>
+                </div>
+
                 <!-- Education -->
-                <div class="bg-gray-50 p-5 rounded-xl shadow-md">
+                <div id="education" data-gsap class="bg-gray-50 p-5 rounded-xl shadow-md">
                     <h3 class="text-xl font-bold text-primary mb-2">Education</h3>
                     <ul class="list-disc pl-6 space-y-1 text-sm">
-                        <li><span class="font-bold">2013:</span> DrNB (Peripheral Vascular Surgery) - Sir Ganga Ram Hospital, New Delhi</li>
+                        <li><span class="font-bold">2013:</span> DrNB (Peripheral Vascular Surgery) - Sir Ganga Ram
+                            Hospital, New Delhi</li>
                         <li><span class="font-bold">2007:</span> DNB (Gen. Surgery) - JLN Hospital, Bhilai</li>
                         <li><span class="font-bold">2001:</span> MBBS - GMC, Odisha</li>
                     </ul>
                 </div>
 
                 <!-- Accolades -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                <div id="accolades" data-gsap class="bg-gray-50 p-6 rounded-xl shadow-md">
                     <h3 class="text-2xl font-bold text-primary mb-4">Accolades</h3>
                     <ul class="list-disc pl-6 text-sm space-y-2">
                         <li><span class="font-medium">Life Member:</span> Diabetic Foot Society of India</li>
@@ -257,7 +317,7 @@
                 </div>
 
                 <!-- Scientific Papers -->
-                <div class="bg-gray-50 p-5 rounded-xl shadow-md">
+                <div id="papers" data-gsap class="bg-gray-50 p-5 rounded-xl shadow-md">
                     <h3 class="text-xl font-bold text-primary mb-2">Scientific Papers</h3>
                     <ul class="list-disc pl-6 space-y-1 text-sm">
                         <li>Assessment of abdominal aortic diameter in Indian population, The Ganga Ram Journal 2013,
@@ -268,7 +328,7 @@
 
 
                 <!-- Conferences -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                <div id="conferences" data-gsap class="bg-gray-50 p-6 rounded-xl shadow-md">
                     <h3 class="text-2xl font-bold text-primary mb-4">Conferences</h3>
 
                     <div class="space-y-4 text-sm">
@@ -303,7 +363,7 @@
 
 
                 <!-- Areas of Expertise -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                <div id="expertise" data-gsap class="bg-gray-50 p-6 rounded-xl shadow-md">
                     <h3 class="text-2xl font-bold text-primary mb-4">Areas of Expertise</h3>
 
                     <!-- Peripheral Arterial Disease -->
@@ -401,10 +461,10 @@
 
                 </div>
 
-                
+
             </div>
 
-            
+
 
         </div>
 
@@ -438,10 +498,12 @@
 
                 <!-- Social Links -->
                 <div class="flex space-x-4 mt-4 text-xl">
-                    <a href="https://www.facebook.com/profile.php?id=61576810187262" class="text-blue-600 hover:text-white transition duration-300">
+                    <a href="https://www.facebook.com/profile.php?id=61576810187262"
+                        class="text-blue-600 hover:text-white transition duration-300">
                         <i class="ri-facebook-fill"></i>
                     </a>
-                    <a href="https://www.instagram.com/central_indiavascular/" class="text-pink-500 hover:text-white transition duration-300">
+                    <a href="https://www.instagram.com/central_indiavascular/"
+                        class="text-pink-500 hover:text-white transition duration-300">
                         <i class="ri-instagram-line"></i>
                     </a>
                     </a>
@@ -479,6 +541,42 @@
             © 2025 CIIVES | All rights reserved.
         </div>
     </footer>
+
+    <script>
+        gsap.from(".lg\\:block", {
+            opacity: 0,
+            x: -30,
+            duration: 1.2,
+            delay: 0.3,
+            ease: "power3.out"
+        });
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate all sections with data-gsap
+        gsap.utils.toArray("[data-gsap]").forEach((section, i) => {
+            gsap.fromTo(section,
+                {
+                    opacity: 0,
+                    y: 40
+                },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    }
+                }
+            );
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 </body>
 

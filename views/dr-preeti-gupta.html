@@ -179,7 +179,7 @@
 
         <!-- === 1st Div: Basic Profile - Dr. Preeti Gupta === -->
         <div
-            class="flex flex-col md:flex-row gap-10 items-center bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 p-8">
+            class="relative bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-2xl p-10 md:flex items-center gap-12 overflow-visible hover:shadow-blue-200 transition duration-500">
 
             <!-- Left -->
             <div class="md:w-2/3 space-y-4">
@@ -192,12 +192,16 @@
                 <p class="font-medium text-blue-600 mt-2">
                     Mobile: <a href="tel:+918600888444">+91-8600888444</a>
                 </p>
+                <a href="appointment.html"
+                    class="inline-block bg-[#1D3156] text-white px-6 py-2 mt-2 rounded-full shadow hover:bg-blue-900 transition duration-300">
+                    Book Appointment
+                </a>
             </div>
 
             <!-- Right -->
-            <div class="md:w-1/3 flex justify-center">
+            <div class="md:w-1/3 relative flex justify-center">
                 <img src="/assets/images/teams/Dr Preeti Gupta.jpg" alt="Dr. Preeti Gupta"
-                    class="w-60 h-60 rounded-full object-cover shadow-lg ring-4 ring-primary ring-offset-2" />
+                    class="w-72 h-72 object-cover rounded-full shadow-lg ring-4 ring-primary ring-offset-2 transition-transform duration-500 hover:scale-105" />
             </div>
         </div>
 
@@ -206,39 +210,55 @@
         <div
             class="flex flex-col lg:flex-row gap-12 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 p-8">
 
-            <!-- Right1: About -->
-            <div class="lg:w-1/3 p-6 rounded-xl shadow-md bg-white">
-                <h3 class="text-xl font-bold text-primary mb-2">About</h3>
-                <p class="text-sm leading-relaxed text-gray-800">
-                    Dr. Preeti Gupta is an experienced Diabetic Foot Consultant with advanced training in foot
-                    diagnostics and
-                    podiatric care. She specialises in the early detection, prevention, and non-surgical management of
-                    diabetic foot
-                    complications, playing a vital role in limb salvage and amputation prevention.
-                    <br><br>
-                    Her clinical practice includes detailed vascular and neurological assessments such as Vibration
-                    Perception
-                    Testing (VPT), Ankle-Brachial and Toe-Brachial Index measurements, Transcutaneous Oxygen Pressure
-                    (TcPO₂),
-                    Plantar Pressure Mapping, and Gait Analysis. She also offers targeted therapies like Vacuum-Assisted
-                    Closure
-                    (VAC) therapy, ingrown toenail management, and orthotic/prosthetic guidance.
-                    <br><br>
-                    Working as part of a multidisciplinary team, Dr. Preeti is committed to evidence-based foot care
-                    that
-                    prioritises long-term healing, biomechanical correction, and patient education for those at risk of
-                    diabetic
-                    foot ulcers.
-                    <br><br>
-                    <strong>Languages:</strong> English, Hindi, Marathi
-                </p>
+            <!-- Right1: Quick Navigation -->
+            <div class="hidden lg:block lg:w-1/3 p-6 rounded-xl shadow-md bg-white space-y-4 sticky top-24 h-fit">
+                <h3 class="text-xl font-bold text-primary mb-2">Quick Navigation</h3>
+                <ul class="space-y-2 list-disc list-inside text-sm text-blue-700 font-medium">
+                    <li><a href="#about" class="hover:underline">About</a></li>
+                    <li><a href="#education" class="hover:underline">Education</a></li>
+                    <li><a href="#accolades" class="hover:underline">Accolades</a></li>
+                    <li><a href="#expertise" class="hover:underline">Areas of Expertise</a></li>
+                </ul>
             </div>
 
             <!-- Left1: Multiple Info Boxes -->
             <div class="lg:w-2/3 space-y-10">
 
+                <!-- About -->
+                <div id="about" class="bg-gray-50 p-5 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-primary mb-2">About</h3>
+                    <p class="text-sm leading-relaxed text-gray-800">
+                        Dr. Preeti Gupta is an experienced Diabetic Foot Consultant with advanced training in foot
+                        diagnostics and
+                        podiatric care. She specialises in the early detection, prevention, and non-surgical management
+                        of
+                        diabetic foot
+                        complications, playing a vital role in limb salvage and amputation prevention.
+                        <br><br>
+                        Her clinical practice includes detailed vascular and neurological assessments such as Vibration
+                        Perception
+                        Testing (VPT), Ankle-Brachial and Toe-Brachial Index measurements, Transcutaneous Oxygen
+                        Pressure
+                        (TcPO₂),
+                        Plantar Pressure Mapping, and Gait Analysis. She also offers targeted therapies like
+                        Vacuum-Assisted
+                        Closure
+                        (VAC) therapy, ingrown toenail management, and orthotic/prosthetic guidance.
+                        <br><br>
+                        Working as part of a multidisciplinary team, Dr. Preeti is committed to evidence-based foot care
+                        that
+                        prioritises long-term healing, biomechanical correction, and patient education for those at risk
+                        of
+                        diabetic
+                        foot ulcers.
+                        <br><br>
+                        <strong>Languages:</strong> English, Hindi, Marathi
+                    </p>
+
+                </div>
+
                 <!-- Education -->
-                <div class="bg-gray-50 p-5 rounded-xl shadow-md">
+                <div id="education" class="bg-gray-50 p-5 rounded-xl shadow-md">
                     <h3 class="text-xl font-bold text-primary mb-2">Education</h3>
                     <ul class="list-disc pl-6 space-y-1 text-sm">
                         <li><span class="font-bold">2019:</span> FDFM – IPA</li>
@@ -249,22 +269,24 @@
 
 
                 <!-- Accolades -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                <div id="accolades" class="bg-gray-50 p-6 rounded-xl shadow-md">
                     <h3 class="text-2xl font-bold text-primary mb-4">Accolades</h3>
                     <ul class="list-disc pl-6 text-sm space-y-2 text-gray-800">
 
                         <li><span class="font-bold">Life Member:</span> Indian Podiatry Association (IPA)</li>
                         <li><span class="font-bold">Life Member:</span> Diabetic Foot Society of India (DFSI)</li>
-                        <li><span class="font-bold">Principal Investigator in Trial:</span> Role of stem cells in healing of
+                        <li><span class="font-bold">Principal Investigator in Trial:</span> Role of stem cells in
+                            healing of
                             Ischaemic ulcers in non-reconstructable arterial disease (STEMPUTICS).
                         </li>
-                        <li><span class="font-bold">Co-Principal Investigator in Trial:</span> Role of Woxheal in non-healing wounds.</li>
+                        <li><span class="font-bold">Co-Principal Investigator in Trial:</span> Role of Woxheal in
+                            non-healing wounds.</li>
                     </ul>
                 </div>
 
 
                 <!-- Areas of Expertise -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                <div id="expertise" class="bg-gray-50 p-6 rounded-xl shadow-md">
                     <h3 class="text-2xl font-bold text-primary mb-4">Areas of Expertise</h3>
 
 
@@ -317,10 +339,10 @@
 
                 </div>
 
-                
+
             </div>
 
-            
+
 
 
         </div>

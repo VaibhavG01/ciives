@@ -64,3 +64,77 @@
 
             </div>
         </section>
+
+
+        <!-- Treatments Performed - Table Format -->
+        <section class="bg-gray-50 py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-primary text-center mb-12">Treatments Performed</h2>
+
+                <div class="overflow-x-auto">
+                    <table class="min-w-full border border-gray-300 bg-white rounded-xl overflow-hidden shadow-lg">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="text-left px-6 py-4 text-lg font-semibold">Category</th>
+                                <th class="text-left px-6 py-4 text-lg font-semibold">Conditions</th>
+                                <th class="text-left px-6 py-4 text-lg font-semibold">Treatment Options</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm text-gray-800">
+                            <!-- Venous Diseases -->
+                            <tr class="border-t border-gray-200">
+                                <td class="px-6 py-4 font-bold text-primary align-top">Venous Diseases</td>
+                                <td class="px-6 py-4 align-top">
+                                    <ul class="list-disc pl-4 space-y-1">
+                                        <li>Varicose veins</li>
+                                        <li>Deep vein thrombosis & Post-thrombotic syndrome</li>
+                                    </ul>
+                                </td>
+                                <td class="px-6 py-4 align-top">
+                                    <ul class="list-disc pl-4 space-y-1">
+                                        <li>Laser ablation</li>
+                                        <li>Radiofrequency ablation</li>
+                                        <li>Glue ablation</li>
+                                        <li>Sclerotherapy</li>
+                                        <li>Thrombolysis</li>
+                                        <li>Thrombectomy</li>
+                                        <li>Thrombotic aspiration</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <!-- Arterial Diseases -->
+                            <tr class="border-t border-gray-200">
+                                <td class="px-6 py-4 font-bold text-primary align-top">Arterial Diseases</td>
+                                <td class="px-6 py-4 align-top">
+                                    <ul class="list-disc pl-4 space-y-1">
+                                        <li>Carotid artery diseases</li>
+                                        <li>Aneurysms</li>
+                                        <li>Critical limb ischemia</li>
+                                        <li>Acute limb ischemia</li>
+                                        <li>Diabetic foot & gangrene</li>
+                                        <li>Pulmonary embolism</li>
+                                    </ul>
+                                </td>
+                                <td class="px-6 py-4 align-top">
+                                    <ul class="list-disc pl-4 space-y-1">
+                                        <li>Carotid endarterectomy surgery</li>
+                                        <li>Carotid artery stenting</li>
+                                        <li>Endovascular/open repair</li>
+                                        <li>Peripheral angioplasty</li>
+                                        <li>Peripheral stenting</li>
+                                        <li>Peripheral atherectomy</li>
+                                        <li>Peripheral bypass</li>
+                                        <li>Embolectomy</li>
+                                        <li>Thrombolysis</li>
+                                        <li>Advanced wound care</li>
+                                        <li>Thrombosuction</li>
+                                        <li>Catheter-directed thrombolysis</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
