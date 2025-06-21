@@ -14,9 +14,11 @@
 
 
     <link rel="stylesheet" href="../assets/css/styles.css">
+
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body class="">
+
     <!-- Top Bar -->
     <div class="bg-primary text-white text-sm py-2 px-4">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
@@ -98,8 +100,8 @@
                     </div>
                 </div>
 
-                <a href="../views/blogs.html" class="hover:text-blue-600">Blogs</a>
-                <a href="../views/contact.html" class="hover:text-blue-600">Contact Us</a>
+                <a href="../views/blogs.html" class="hover:text-primary">Blogs</a>
+                <a href="../views/contact.html" class="hover:text-primary">Contact Us</a>
             </nav>
 
             <!-- Appointment Button -->
@@ -116,10 +118,10 @@
 
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="md:hidden hidden px-4 pb-6 text-gray-700 font-medium">
-            <a href="../index.html" class="block py-2 border-b hover:text-blue-600">Home</a>
+            <a href="../index.html" class="block py-2 border-b hover:text-primary">Home</a>
             <!-- Mobile About Us Dropdown -->
             <details class="py-2 border-b">
-                <summary class="cursor-pointer hover:text-blue-600">About Us</summary>
+                <summary class="cursor-pointer hover:text-primary">About Us</summary>
                 <div class="pl-4 pt-2 space-y-1">
                     <!-- <a href="views/about.html" class="block hover:text-blue-500">Overview</a> -->
                     <a href="../views/ciives.html" class="block hover:text-blue-500">CIIVES</a>
@@ -129,10 +131,9 @@
                 </div>
             </details>
 
-
             <!-- Mobile Conditions Dropdown -->
             <details class="py-2 border-b">
-                <summary class="cursor-pointer hover:text-blue-600">Conditions</summary>
+                <summary class="cursor-pointer hover:text-primary">Conditions</summary>
                 <div class="pl-4 pt-2 space-y-1">
                     <a href="#" class="block hover:text-blue-500">Varicose Veins</a>
                     <a href="#" class="block hover:text-blue-500">Deep Vein Thrombosis</a>
@@ -146,7 +147,7 @@
 
             <!-- Mobile Treatments Dropdown -->
             <details class="py-2 border-b">
-                <summary class="cursor-pointer hover:text-blue-600">Treatments</summary>
+                <summary class="cursor-pointer hover:text-primary">Treatments</summary>
                 <div class="pl-4 pt-2 space-y-1">
                     <a href="#" class="block hover:text-blue-500">Treatments for Varicose Veins</a>
                     <a href="#" class="block hover:text-blue-500">AV Fistula for Dialysis</a>
@@ -160,8 +161,8 @@
                 </div>
             </details>
 
-            <a href="../views/blogs.html" class="block py-2 border-b hover:text-blue-600">Blogs</a>
-            <a href="../views/contact.html" class="block py-2 border-b hover:text-blue-600">Contact Us</a>
+            <a href="../views/blogs.html" class="block py-2 border-b hover:text-primary">Blogs</a>
+            <a href="../views/contact.html" class="block py-2 border-b hover:text-primary">Contact Us</a>
 
             <a href="../views/appointment.html"
                 class="block text-center mt-3 bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
@@ -179,20 +180,125 @@
         });
     </script>
 
-    <main>
-        <section class="py-16 px-6">
-            <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
-                <!-- Blog Card 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
-                    <img src="blog1.jpeg" alt="Blog Image" class="rounded-lg mb-4">
-                    <h2 class="text-xl font-semibold mb-2">क्या है वास्कुलर सर्जरी?</h2>
-                    <p class="text-gray-600 text-sm">क्या थोड़ी दर चलन पर आपके पैरों में दर्द होता है? क्या आपके पैरों में नीली और फूल...</p>
-                    <a href="blogDetails.html?id=1" class="block mt-4 text-primary font-medium">Read More →</a>
+    <main>
+        <!-- Blog Details Page -->
+        <section class="py-16 px-6">
+            <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row gap-8">
+                <!-- Main Content -->
+                <div class="w-full md:w-2/3 bg-white p-8 rounded-xl shadow-md">
+                    <div id="blog-detail">
+                        <!-- Blog Title, Content, and Image will be dynamically inserted here -->
+                    </div>
                 </div>
-                
+
+                <!-- Sidebar: Recent Blogs -->
+                <aside class="w-full md:w-1/3">
+                    <h3 class="text-xl font-semibold mb-4">Recent Blogs</h3>
+                    <div id="recent-blogs"></div>
+                </aside>
             </div>
         </section>
+
+        <script>
+            const blogs = [
+                {
+                    id: 1,
+                    title: "क्या है वास्कुलर सर्जरी?",
+                    content: `
+                <p>क्या थोड़ी दर चलन पर आपके पैरों में दर्द होता है? क्या आपके पैरों में नीली और फूली हुई नसें दिखती हैं?</p>
+                <p>यह केवल उम्र के कारण दिखने वाले लक्षण नहीं हैं। यह संकेत हो सकता है कि आपके हाथों-पैरों की रक्तवाहिनियों (blood vessels) में ब्लॉकेज है।</p>
+                <br>
+                <h3 class="font-bold text-xl">वास्कुलर सर्जरी क्या होती है?</h3>
+                <br>
+                <p>वास्कुलर सर्जरी एक विशिष्ट चिकित्सा शाखा है, जिसमें रक्तवाहिनियों से जुड़ी सभी बीमारियों का इलाज किया जाता है। रक्तवाहिनियाँ दो प्रकार की होती हैं:</p>
+                <ul class="px-4">
+                    <li><strong>धमनियाँ (Arteries): </strong>ऑक्सीजन युक्त खून शरीर के विभिन्न हिस्सों तक पहुंचाती हैं।</li>
+                    <li><strong>नसें (Veins):</strong>उपयोग हुआ, बिना ऑक्सीजन वाला खून वापस हृदय की ओर लाती हैं।</li>
+                </ul>
+                <br>
+                <p>जब इन रक्तवाहिनियों में खून का बहाव धीमा या रुक जाता है, तो स्ट्रोक या गैंगरीन जैसी गंभीर समस्याएं हो सकती हैं।</p>
+
+                <p>वास्कुलर सर्जन ऐसे विशेषज्ञ होते हैं जो शरीर में रक्त प्रवाह बनाए रखते हैं — ताकि स्ट्रोक या अंग कटने जैसी स्थिति न बने।<br><strong>नोट:</strong> इसमें हृदय और मस्तिष्क की रक्तवाहिनियों का इलाज शामिल नहीं होता।</p>
+                <br>
+                <h3>वास्कुलर सर्जरी में किन बीमारियों का इलाज किया जाता है?</h3>
+                <br>
+                <h4>1. वेरिकोज़ वेन्स (नीली व फूली हुई नसें)</h4>
+                <p><strong>यह समस्या क्यों होती है?</strong> पैरों की नसों में मौजूद वाल्व कमजोर हो जाने के कारण खून वापस हृदय की ओर नहीं जा पाता और नसों में जमा होने लगता है। इससे नीली या बैंगनी नस उभरी हुई दिखाई देने लगती है।</p>
+                <p><strong>लक्षण:</strong></p>
+                <ul>
+                    <li>पैरों में भारीपन या दर्द महसूस होना</li>
+                    <li>पैरों और टखनों पर उभरी हुई, नीली-बैंगनी नसें</li>
+                </ul>
+                <br>
+                <h4>2. परफेरल आर्टरियल डिज़ीज़ (PAD)</h4>
+                <p>धमनियों में प्लाक (चर्बी व कोलेस्ट्रॉल जमा) बनने से वह सिकुड़ जाती हैं और खून का प्रवाह कम हो जाता है, जिससे मांसपेशियों तक ऑक्सीजन नहीं पहुंच पाता।</p>
+                <p><strong>लक्षण:</strong> थोड़ी दूर चलने पर पैरों में दर्द होना, जो आराम करने पर ठीक हो जाता है।</p>
+                <br>
+                <h4>3. कैरोटिड आर्टरी डिज़ीज़ (गर्दन की धमनी में रुकावट)</h4>
+                <p>गर्दन में मौजूद कैरोटिड धमनियाँ मस्तिष्क को खून पहुंचाती हैं। इनमें प्लाक जमा हो जाने से मस्तिष्क को खून की सप्लाई घट जाती है और स्ट्रोक हो सकता है।</p>
+                <ul>
+                    <li>शरीर के एक हिस्से में अचानक कमजोरी या सुन्न हो जाना</li>
+                    <li>संतुलन खोना, बोलने में परेशानी, अचानक तेज सिरदर्द</li>
+                </ul>
+                <br>
+                <h4>4. एन्यूरिज़्म (धमनी की दीवार का फुल जाना)</h4>
+                <p>धमनी का कोई हिस्सा कमजोर हो जाने पर वह रक्त प्रवाह का दबाव नहीं झेल पाता और गब्बारे की तरह फूल जाता है। यदि वह फट जाए तो जानलेवा आंतरिक रक्तस्राव हो सकता है।</p>
+                <p><strong>लक्षण:</strong> कई बार कोई लक्षण नहीं होते, पर फटने पर चक्कर, तेज धड़कन, उल्टी, पसीना आना, बेहोशी जैसे लक्षण दिखाई देते हैं।</p>
+                <br>
+                <h4>5. डायबिटिक फूट</h4>
+                <p>डायबिटीज के कारण नसें और रक्तवाहिनियाँ क्षतिग्रस्त हो जाती हैं, जिससे पैरों में रक्त आपूर्ति घट जाती है। घाव नहीं भरते और संक्रमण हो जाता है।</p>
+                <p><strong>लक्षण:</strong> ऐसा घाव जो महीनों से ठीक नहीं हो रहा हो, पैर या उंगलियों का काला पड़ना (गैंगरीन)।</p>
+                <br>
+                <h4>6. डीप वेन थ्रॉम्बोसिस (DVT)</h4>
+                <p>पैरों की गहरी नसों में खून का थक्का जमने से खून का बहाव रुक जाता है। यह थक्का फटकर फेफड़ों तक पहुँच जाए तो Pulmonary Embolism हो सकता है — जानलेवा स्थिति।</p>
+                <ul>
+                    <li>पैर में सूजन व दर्द</li>
+                    <li>त्वचा का नीला पड़ना</li>
+                    <li>चलने या दबाने पर दर्द</li>
+                </ul>
+                <br>
+                <h3>निष्कर्ष</h3>
+                <p>यदि इन बीमारियों का इलाज सही समय पर वास्कुलर विशेषज्ञ द्वारा किया जाए, तो पैर काटने जैसी स्थिति से भी बचा जा सकता है।</p>
+                <br>
+                <p><strong>संपर्क करें:</strong><br>
+                <strong>Central India Institute of Vascular & Endovascular Sciences (CIIVES)</strong><br>
+                डॉ. रोहित गुप्ता / डॉ. कात्यायन गुप्ता</p>
+            `,
+                    image: "blog1.jpeg",
+                    author: "CIIVES, Nagpur",
+                    date: "2025-06-19"
+                }
+            ];
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const blogId = parseInt(urlParams.get('id'));
+            const blog = blogs.find(b => b.id === blogId);
+
+            if (blog) {
+                const blogDetailContainer = document.getElementById('blog-detail');
+                blogDetailContainer.innerHTML = `
+            <img src="${blog.image}" alt="Blog Image" class="rounded-lg mb-6">
+            <h2 class="text-3xl font-semibold mb-4">${blog.title}</h2>
+            <p class="text-gray-600 text-sm mb-6"><em>By ${blog.author} | ${blog.date}</em></p>
+            <div class="text-gray-800 text-base leading-relaxed">${blog.content}</div>
+        `;
+            }
+
+            const recentBlogsContainer = document.getElementById('recent-blogs');
+            blogs.slice(0, 3).forEach(recentBlog => {
+                recentBlogsContainer.innerHTML += `
+            <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+                <h4 class="text-lg font-semibold">${recentBlog.title}</h4>
+                <p class="text-gray-500 text-sm">${recentBlog.content.substring(0, 100)}...</p>
+                <a href="blogDetails.html?id=${recentBlog.id}" class="text-primary font-medium mt-2 block">और पढ़ें →</a>
+            </div>
+        `;
+            });
+        </script>
+
+
+
 
     </main>
 
@@ -272,7 +378,6 @@
     <script src="../assets/js/gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="../assets/js/script.js"></script>
-
 </body>
 
 </html>
