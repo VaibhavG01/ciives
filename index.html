@@ -577,8 +577,10 @@
                                 class="min-w-[300px] bg-white rounded-xl shadow-md p-5 flex-shrink-0 transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
                                 <img src="https://source.unsplash.com/400x200/?hospital" alt="Blog 2"
                                     class="w-full h-40 object-cover rounded-lg mb-4">
-                                <h4 class="text-xl font-semibold mb-2 text-gray-900">Vascular Surgery: Saving Limbs, Saving Lives</h4>
-                                <p class="text-sm text-gray-600">Do you have bulging veins on your calves or ankles? Or do you feel pain in your ...
+                                <h4 class="text-xl font-semibold mb-2 text-gray-900">Vascular Surgery: Saving Limbs,
+                                    Saving Lives</h4>
+                                <p class="text-sm text-gray-600">Do you have bulging veins on your calves or ankles? Or
+                                    do you feel pain in your ...
                                 </p>
                             </div>
                         </a>
@@ -648,26 +650,62 @@
                     <div id="galleryScroll" class="overflow-x-auto scrollbar-hide">
                         <div class="flex space-x-6 w-max px-10">
                             <!-- Images -->
-                            <div
+                            <div  onclick="openLightbox('assets/images/gallery/1.jpg')"
                                 class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
                                 <img src="assets/images/gallery/1.jpg" alt="Gallery 1"
                                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                             </div>
-                            <div
+                            <div  onclick="openLightbox('assets/images/gallery/2.jpg')"
                                 class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
                                 <img src="assets/images/gallery/2.jpg" alt="Gallery 2"
                                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                             </div>
-                            <div
+                            <div onclick="openLightbox('assets/images/gallery/3.jpg')"
                                 class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
                                 <img src="assets/images/gallery/3.jpg" alt="Gallery 3"
                                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                             </div>
+                            <div onclick="openLightbox('assets/images/gallery/dr/1.png')"
+                                class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                                <img src="assets/images/gallery/dr/1.png" alt="Gallery 3"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                            </div>
+                            <div onclick="openLightbox('assets/images/gallery/dr/2.png')"
+                                class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                                <img src="assets/images/gallery/dr/2.png" alt="Gallery 3"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                            </div>
+                            <div onclick="openLightbox('assets/images/gallery/dr/3.png')"
+                                class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                                <img src="assets/images/gallery/dr/3.png" alt="Gallery 3"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                            </div>
+                            <div onclick="openLightbox('assets/images/gallery/st.jpeg')"
+                                class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                                <img src="assets/images/gallery/st.jpeg" alt="Gallery 3"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                            </div>
+                            <div onclick="openLightbox('assets/images/gallery/st1.jpeg')"
+                                class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                                <img src="assets/images/gallery/st1.jpeg" alt="Gallery 3"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightboxModal"
+            class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+            <span onclick="closeLightbox()"
+                class="absolute top-5 right-5 text-white text-4xl cursor-pointer">&times;</span>
+            <img id="lightboxImage" src="" alt="Enlarged Image"
+                class="max-w-[90%] max-h-[80vh] rounded-lg shadow-xl border-4 border-white" />
+        </div>
+
 
         <!-- Custom CSS to hide scrollbar -->
         <style>
@@ -950,6 +988,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/lightbox.js"></script>
 
     <!-- GSAP Animations -->
     <script src="assets/js/gsap.js"></script>
