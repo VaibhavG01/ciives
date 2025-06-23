@@ -119,9 +119,9 @@
                     </div>
                 </div>
 
-
+                <a href="#" class="hover:text-blue-600">Conditions</a>
                 <!-- Conditions Dropdown -->
-                <div class="relative group">
+                <!-- <div class="relative group">
                     <button class="inline-flex items-center p-2 text-gray-700 shadow-none">Conditions ▾</button>
                     <div
                         class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
@@ -133,10 +133,10 @@
                         <a href="#" class="block px-4 py-2 hover:bg-blue-50">Carotid Artery Disease</a>
                         <a href="#" class="block px-4 py-2 hover:bg-blue-50">Aneurysms</a>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Treatments Dropdown -->
-                <div class="relative group">
+                <!-- <div class="relative group">
                     <button class="inline-flex items-center p-2 text-gray-700 shadow-none">Treatments ▾</button>
                     <div
                         class="absolute left-0 mt-2 w-72 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
@@ -150,7 +150,7 @@
                         <a href="#" class="block px-4 py-2 hover:bg-blue-50">IVC Filter Insertion</a>
                         <a href="#" class="block px-4 py-2 hover:bg-blue-50">Athrectomy</a>
                     </div>
-                </div>
+                </div> -->
 
                 <a href="views/blogs.html" class="hover:text-blue-600">Blogs</a>
                 <a href="views/contact.html" class="hover:text-blue-600">Contact Us</a>
@@ -249,210 +249,149 @@
         </section>
 
 
-        <!-- Conditions Section -->
-        <section class="px-4 py-16 bg-primary w-full mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12 text-text">Conditions</h2>
+        <!-- Vascular Conditions Section -->
+        <section class="bg-white py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Heading -->
+                <div class="mb-12 text-center">
+                    <h2 class="text-4xl font-bold text-[#1D3156] mb-4">Vascular Conditions We Treat</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Explore common vascular problems and their treatments.
+                    </p>
+                </div>
 
-            <!-- Slider Container -->
-            <div class="relative">
-                <!-- Scrollable Row -->
-                <div id="servicesSlider"
-                    class="flex overflow-x-auto scroll-smooth snap-x gap-6 px-2 lg:gap-8 scrollbar-hide">
-
-
-                    <!-- Left Scroll Button -->
-                    <button id="prevBtn"
-                        class="flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 bg-white text-primary shadow-lg rounded-full w-10 h-10 z-10 hover:bg-blue-600 hover:text-white transition">
-                        <i class="ri-arrow-left-s-line text-2xl"></i>
+                <!-- Slider with Navigation -->
+                <div class="relative">
+                    <!-- Navigation Buttons -->
+                    <button id="conditionPrev"
+                        class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow hover:bg-gray-100 p-2 rounded-full">
+                        &#8592;
+                    </button>
+                    <button id="conditionNext"
+                        class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow hover:bg-gray-100 p-2 rounded-full">
+                        &#8594;
                     </button>
 
-                    <div
-                        class="group relative md:w-[33.3%] lg:w-[25%] flex-shrink-0 snap-center text-center  backdrop-blur-md rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] overflow-hidden">
+                    <!-- Card Scroll Wrapper -->
+                    <div id="conditionScroll" class="overflow-x-auto scrollbar-hide">
+                        <div class="flex space-x-6 w-max">
+                            <!-- Card 1 -->
+                            <a href="#varicose-veins"
+                                class="bg-gradient-to-b from-white to-gray-100  min-w-[250px] max-w-[250px] h-[260px] border border-gray-200 rounded-xl p-6 text-center flex flex-col justify-start items-center">
 
-                        <!-- Glowing background animation ring -->
-                        <div
-                            class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#3fc4e0]/10 to-[#1D3156]/10 opacity-0 group-hover:opacity-100 transition duration-500 blur-xxl z-0">
-                        </div>
+                                <!-- Circular Image with Ring -->
+                                <div class="mb-4">
+                                    <img src="assets/images/services/1.png" alt="Varicose Veins"
+                                        class="h-40 w-40 object-cover rounded-full mx-auto ring-4 ring-[#1D3156] ring-opacity-20 hover:ring-opacity-40 transition duration-300" />
+                                </div>
 
-                        <!-- Circular Image with Animated Ring -->
-                        <div
-                            class="relative w-28 h-28 mx-auto mb-4 ring-4 ring-offset-4 ring-accent/40 group-hover:ring-accent/80 transition-all duration-500 rounded-full overflow-hidden shadow-md z-10">
-                            <img src="assets/images/services/1.png" alt="Varicose Veins"
-                                class="w-full h-full object-cover" />
-                        </div>
+                                <!-- Title -->
+                                <h3 class="font-semibold text-xl text-[#1D3156] mb-1">Varicose Veins</h3>
 
-                        <!-- Title -->
-                        <h3
-                            class="font-semibold text-lg text-text z-10 relative group-hover:text-accent transition duration-300">
-                            Varicose Veins
-                        </h3>
+                            </a>
+                            <!-- Card 2 -->
+                            <a href="#varicose-veins"
+                                class="bg-gradient-to-b from-white to-gray-100  min-w-[250px] max-w-[250px] h-[260px] border border-gray-200 rounded-xl p-6 text-center flex flex-col justify-start items-center">
 
-                        <!-- Animated Accent Border -->
-                        <div
-                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center rounded-full">
-                        </div>
-                    </div>
+                                <!-- Circular Image with Ring -->
+                                <div class="mb-4">
+                                    <img src="assets/images/services/2.png" alt="Diabetic Foot"
+                                        class="h-40 w-40 object-cover rounded-full mx-auto ring-4 ring-[#1D3156] ring-opacity-20 hover:ring-opacity-40 transition duration-300" />
+                                </div>
 
-                    <div
-                        class="group relative w-[75%] md:w-[33.3%] lg:w-[25%] flex-shrink-0 snap-center text-center  backdrop-blur-md rounded-2xl p-6  hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] overflow-hidden">
+                                <!-- Title -->
+                                <h3 class="font-semibold text-xl text-[#1D3156] mb-1">Diabetic Foot</h3>
 
-                        <!-- Glowing background animation ring -->
-                        <div
-                            class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#3fc4e0]/10 to-[#1D3156]/10 opacity-0 group-hover:opacity-100 transition duration-500 blur-xxl z-0">
-                        </div>
+                            </a>
+                            <!-- Card 3 -->
+                            <a href="#varicose-veins"
+                                class="bg-gradient-to-b from-white to-gray-100  min-w-[250px] max-w-[250px] h-[260px] border border-gray-200 rounded-xl p-6 text-center flex flex-col justify-start items-center">
 
-                        <!-- Circular Image with Animated Ring -->
-                        <div
-                            class="relative w-28 h-28 mx-auto mb-4 ring-4 ring-offset-4 ring-accent/40 group-hover:ring-accent/80 transition-all duration-500 rounded-full overflow-hidden shadow-md z-10">
-                            <img src="assets/images/services/2.png" alt="Diabetic Foot"
-                                class="w-full h-full object-cover" />
-                        </div>
+                                <!-- Circular Image with Ring -->
+                                <div class="mb-4">
+                                    <img src="assets/images/services/3.png" alt="DVT"
+                                        class="h-40 w-40 object-cover rounded-full mx-auto ring-4 ring-[#1D3156] ring-opacity-20 hover:ring-opacity-40 transition duration-300" />
+                                </div>
 
-                        <!-- Title -->
-                        <h3
-                            class="font-semibold text-lg text-text z-10 relative group-hover:text-accent transition duration-300">
-                            Diabetic Foot
-                        </h3>
+                                <!-- Title -->
+                                <h3 class="font-semibold text-xl text-[#1D3156] mb-1">Deep Vein Thrombosis</h3>
 
-                        <!-- Animated Accent Border -->
-                        <div
-                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center rounded-full">
-                        </div>
-                    </div>
+                            </a>
+                            <!-- Card 4 -->
+                            <a href="#varicose-veins"
+                                class="bg-gradient-to-b from-white to-gray-100  min-w-[250px] max-w-[250px] h-[260px] border border-gray-200 rounded-xl p-6 text-center flex flex-col justify-start items-center">
 
-                    <div
-                        class="group relative w-[75%] md:w-[33.3%] lg:w-[25%] flex-shrink-0 snap-center text-center  backdrop-blur-md rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] overflow-hidden">
+                                <!-- Circular Image with Ring -->
+                                <div class="mb-4">
+                                    <img src="assets/images/services/4.png" alt="Carotid EA"
+                                        class="h-40 w-40 object-cover rounded-full mx-auto ring-4 ring-[#1D3156] ring-opacity-20 hover:ring-opacity-40 transition duration-300" />
+                                </div>
 
-                        <!-- Glowing background animation ring -->
-                        <div
-                            class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#3fc4e0]/10 to-[#1D3156]/10 opacity-0 group-hover:opacity-100 transition duration-500 blur-xxl z-0">
-                        </div>
+                                <!-- Title -->
+                                <h3 class="font-semibold text-xl text-[#1D3156] mb-1">Carotid Artery Disease</h3>
 
-                        <!-- Circular Image with Animated Ring -->
-                        <div
-                            class="relative w-28 h-28 mx-auto mb-4 ring-4 ring-offset-4 ring-accent/40 group-hover:ring-accent/80 transition-all duration-500 rounded-full overflow-hidden shadow-md z-10">
-                            <img src="assets/images/services/3.png" alt="DVT" class="w-full h-full object-cover" />
-                        </div>
+                            </a>
+                            <!-- Card 5 -->
+                            <a href="#varicose-veins"
+                                class="bg-gradient-to-b from-white to-gray-100  min-w-[250px] max-w-[250px] h-[260px] border border-gray-200 rounded-xl p-6 text-center flex flex-col justify-start items-center">
 
-                        <!-- Title -->
-                        <h3
-                            class="font-semibold text-lg text-text z-10 relative group-hover:text-accent transition duration-300">
-                            DVT
-                        </h3>
+                                <!-- Circular Image with Ring -->
+                                <div class="mb-4">
+                                    <img src="assets/images/services/5.png" alt="Aneurysms"
+                                        class="h-40 w-40 object-cover rounded-full mx-auto ring-4 ring-[#1D3156] ring-opacity-20 hover:ring-opacity-40 transition duration-300" />
+                                </div>
 
-                        <!-- Animated Accent Border -->
-                        <div
-                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center rounded-full">
-                        </div>
-                    </div>
+                                <!-- Title -->
+                                <h3 class="font-semibold text-xl text-[#1D3156] mb-1">Aneurysms</h3>
+
+                            </a>
+                            <!-- Card 6 -->
+                            <a href="#varicose-veins"
+                                class="bg-gradient-to-b from-white to-gray-100  min-w-[250px] max-w-[250px] h-[260px] border border-gray-200 rounded-xl p-6 text-center flex flex-col justify-start items-center">
+
+                                <!-- Circular Image with Ring -->
+                                <div class="mb-4">
+                                    <img src="assets/images/services/6.png" alt="Peripheral Angioplasty"
+                                        class="h-40 w-40 object-cover rounded-full mx-auto ring-4 ring-[#1D3156] ring-opacity-20 hover:ring-opacity-40 transition duration-300" />
+                                </div>
+
+                                <!-- Title -->
+                                <h3 class="font-semibold text-xl text-[#1D3156] mb-1">Peripheral Arterial Disease (PAD)</h3>
+
+                            </a>
 
 
-                    <div
-                        class="group relative w-[75%] md:w-[33.3%] lg:w-[25%] flex-shrink-0 snap-center text-center  backdrop-blur-md rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] overflow-hidden">
 
-                        <!-- Glowing background animation ring -->
-                        <div
-                            class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#3fc4e0]/10 to-[#1D3156]/10 opacity-0 group-hover:opacity-100 transition duration-500 blur-xxl z-0">
-                        </div>
-
-                        <!-- Circular Image with Animated Ring -->
-                        <div
-                            class="relative w-28 h-28 mx-auto mb-4 ring-4 ring-offset-4 ring-accent/40 group-hover:ring-accent/80 transition-all duration-500 rounded-full overflow-hidden shadow-md z-10">
-                            <img src="assets/images/services/4.png" alt="Carotid EA"
-                                class="w-full h-full object-cover" />
-                        </div>
-
-                        <!-- Title -->
-                        <h3
-                            class="font-semibold text-lg text-text z-10 relative group-hover:text-accent transition duration-300">
-                            Carotid EA
-                        </h3>
-
-                        <!-- Animated Accent Border -->
-                        <div
-                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center rounded-full">
                         </div>
                     </div>
-
-                    <div
-                        class="group relative w-[75%] md:w-[33.3%] lg:w-[25%] flex-shrink-0 snap-center text-center  backdrop-blur-md rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] overflow-hidden">
-
-                        <!-- Glowing background animation ring -->
-                        <div
-                            class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#3fc4e0]/10 to-[#1D3156]/10 opacity-0 group-hover:opacity-100 transition duration-500 blur-xxl z-0">
-                        </div>
-
-                        <!-- Circular Image with Animated Ring -->
-                        <div
-                            class="relative w-28 h-28 mx-auto mb-4 ring-4 ring-offset-4 ring-accent/40 group-hover:ring-accent/80 transition-all duration-500 rounded-full overflow-hidden shadow-md z-10">
-                            <img src="assets/images/services/5.png" alt="Aneurysms"
-                                class="w-full h-full object-cover" />
-                        </div>
-
-                        <!-- Title -->
-                        <h3
-                            class="font-semibold text-lg text-text z-10 relative group-hover:text-accent transition duration-300">
-                            Aneurysms
-                        </h3>
-
-                        <!-- Animated Accent Border -->
-                        <div
-                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center rounded-full">
-                        </div>
-                    </div>
-
-                    <div
-                        class="group relative w-[75%] md:w-[33.3%] lg:w-[25%] flex-shrink-0 snap-center text-center  backdrop-blur-md rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] overflow-hidden">
-
-                        <!-- Glowing background animation ring -->
-                        <div
-                            class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#3fc4e0]/10 to-[#1D3156]/10 opacity-0 group-hover:opacity-100 transition duration-500 blur-xxl z-0">
-                        </div>
-
-                        <!-- Circular Image with Animated Ring -->
-                        <div
-                            class="relative w-28 h-28 mx-auto mb-4 ring-4 ring-offset-4 ring-accent/40 group-hover:ring-accent/80 transition-all duration-500 rounded-full overflow-hidden shadow-md z-10">
-                            <img src="assets/images/services/6.png" alt="Peripheral Angioplasty"
-                                class="w-full h-full object-cover" />
-                        </div>
-
-                        <!-- Title -->
-                        <h3
-                            class="font-semibold text-lg text-text z-10 relative group-hover:text-accent transition duration-300">
-                            Peripheral Angioplasty
-                        </h3>
-
-                        <!-- Animated Accent Border -->
-                        <div
-                            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center rounded-full">
-                        </div>
-                    </div>
-
-
 
                 </div>
-                <!-- Right Scroll Button -->
-                <button id="nextBtn"
-                    class="flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 bg-white text-primary shadow-lg rounded-full w-10 h-10 z-10 hover:bg-blue-600 hover:text-white transition">
-                    <i class="ri-arrow-right-s-line text-2xl"></i>
-                </button>
-
             </div>
         </section>
 
+        <!-- Hide scrollbar -->
+        <style>
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        </style>
+
+        <!-- Scroll Navigation -->
         <script>
-            const slider = document.getElementById("servicesSlider");
-            const nextBtn = document.getElementById("nextBtn");
-            const prevBtn = document.getElementById("prevBtn");
-
-            nextBtn.addEventListener("click", () => {
-                slider.scrollBy({ left: 300, behavior: "smooth" });
+            const conditionScroll = document.getElementById('conditionScroll');
+            document.getElementById('conditionPrev').addEventListener('click', () => {
+                conditionScroll.scrollBy({ left: -300, behavior: 'smooth' });
             });
-
-            prevBtn.addEventListener("click", () => {
-                slider.scrollBy({ left: -300, behavior: "smooth" });
+            document.getElementById('conditionNext').addEventListener('click', () => {
+                conditionScroll.scrollBy({ left: 300, behavior: 'smooth' });
             });
         </script>
+
 
 
         <!-- Patient Journey Section -->
@@ -559,30 +498,38 @@
                     <!-- Scrollable Blog Cards -->
                     <div id="blogSlider" class="flex overflow-x-auto space-x-6 scroll-smooth px-1 scrollbar-hide">
                         <!-- Blog 1 -->
-                        <a href="views/blogDetails.html?id=1">
-                            <div
-                                class="min-w-[300px] bg-white rounded-xl shadow-md p-5 flex-shrink-0 transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
-                                <img src="https://source.unsplash.com/400x200/?hospital" alt="Blog 1"
-                                    class="w-full h-40 object-cover rounded-lg mb-4">
-                                <h4 class="text-xl font-semibold mb-2 text-gray-900">क्या है वास्कुलर सर्जरी?</h4>
-                                <p class="text-sm text-gray-600">क्या थोड़ी दर चलन पर आपके पैरों में दर्द होता है? क्या
-                                    आपके पैरों में नीली और फूल...
-                                </p>
-                            </div>
+                        <a href="views/blogDetails.html?id=1"
+                            class="min-w-[300px] max-w-[300px] h-[320px] bg-white rounded-xl shadow-md p-5 flex-shrink-0 transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+                            <img src="assets/images/blogs/1.png" alt="Blog 1"
+                                class="w-full h-40 object-cover rounded-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-900">क्या है वास्कुलर सर्जरी?</h4>
+                            <p class="text-sm text-gray-600 line-clamp-4">
+                                क्या थोड़ी दर चलन पर आपके पैरों में दर्द होता है? क्या आपके पैरों में नीली और फूल...
+                            </p>
                         </a>
 
                         <!-- Blog 2 -->
-                        <a href="views/blogDetails.html?id=2">
-                            <div
-                                class="min-w-[300px] bg-white rounded-xl shadow-md p-5 flex-shrink-0 transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
-                                <img src="https://source.unsplash.com/400x200/?hospital" alt="Blog 2"
-                                    class="w-full h-40 object-cover rounded-lg mb-4">
-                                <h4 class="text-xl font-semibold mb-2 text-gray-900">Vascular Surgery: Saving Limbs,
-                                    Saving Lives</h4>
-                                <p class="text-sm text-gray-600">Do you have bulging veins on your calves or ankles? Or
-                                    do you feel pain in your ...
-                                </p>
-                            </div>
+                        <a href="views/blogDetails.html?id=2"
+                            class="min-w-[300px] max-w-[300px] h-[320px] bg-white rounded-xl shadow-md p-5 flex-shrink-0 transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+                            <img src="assets/images/blogs/2.png" alt="Blog 2"
+                                class="w-full h-40 object-cover rounded-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-900">Vascular Surgery: Saving Limbs, Saving
+                                Lives</h4>
+                            <p class="text-sm text-gray-600 line-clamp-4">
+                                Do you have bulging veins on your calves or ankles?
+                            </p>
+                        </a>
+
+                        <!-- Blog 3 -->
+                        <a href="views/blogDetails.html?id=3"
+                            class="min-w-[300px] max-w-[300px] h-[320px] bg-white rounded-xl shadow-md p-5 flex-shrink-0 transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+                            <img src="assets/images/blogs/3.png" alt="Blog 3"
+                                class="w-full h-40 object-cover rounded-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-900">FistulaFirst – Dialysis की पहली तैयारी
+                            </h4>
+                            <p class="text-sm text-gray-600 line-clamp-4">
+                                What is an AV Fistula?
+                            </p>
                         </a>
                     </div>
 
@@ -598,6 +545,7 @@
                 </div>
             </div>
         </section>
+
 
         <script>
 
@@ -650,12 +598,12 @@
                     <div id="galleryScroll" class="overflow-x-auto scrollbar-hide">
                         <div class="flex space-x-6 w-max px-10">
                             <!-- Images -->
-                            <div  onclick="openLightbox('assets/images/gallery/1.jpg')"
+                            <div onclick="openLightbox('assets/images/gallery/1.jpg')"
                                 class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
                                 <img src="assets/images/gallery/1.jpg" alt="Gallery 1"
                                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                             </div>
-                            <div  onclick="openLightbox('assets/images/gallery/2.jpg')"
+                            <div onclick="openLightbox('assets/images/gallery/2.jpg')"
                                 class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
                                 <img src="assets/images/gallery/2.jpg" alt="Gallery 2"
                                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
@@ -688,6 +636,16 @@
                             <div onclick="openLightbox('assets/images/gallery/st1.jpeg')"
                                 class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
                                 <img src="assets/images/gallery/st1.jpeg" alt="Gallery 3"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                            </div>
+                            <div onclick="openLightbox('assets/images/gallery/OT2.jpg')"
+                                class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                                <img src="assets/images/gallery/OT2.jpg" alt="Gallery 3"
+                                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                            </div>
+                            <div onclick="openLightbox('assets/images/gallery/OT3.jpg')"
+                                class="min-w-[250px] max-w-[250px] h-64 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                                <img src="assets/images/gallery/OT3.jpg" alt="Gallery 3"
                                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                             </div>
                         </div>
