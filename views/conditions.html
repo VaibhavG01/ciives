@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr. Preeti Gupta</title>
+    <title>Conditions</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 </head>
 
@@ -51,7 +53,8 @@
                         class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
 
                         <a href="../views/ciives.html" class="block px-4 py-2 hover:bg-blue-50">CIIVES</a>
-                        <a href="../views/dr-rohit-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Rohit Gupta</a>
+                        <a href="../views/dr-rohit-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Rohit
+                            Gupta</a>
                         <a href="../views/dr-kartik-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Kartik
                             Gupta</a>
                         <a href="../views/dr-preeti-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Preeti
@@ -172,200 +175,165 @@
         });
     </script>
 
-    <section class="px-4 py-16 bg-gray-50 text-gray-800 max-w-7xl mx-auto space-y-16">
-
-        <!-- === 1st Div: Basic Profile - Dr. Preeti Gupta === -->
-        <div
-            class="relative bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-2xl p-10 md:flex items-center gap-12 overflow-visible hover:shadow-blue-200 transition duration-500">
-
-            <!-- Left -->
-            <div class="md:w-2/3 space-y-4">
-                <h1 class="text-3xl font-bold text-primary">Dr. Preeti Gupta</h1>
-                <h3 class="text-lg font-semibold">MBBS, DNB, FDFM (IPA)</h3>
-                <p class="text-sm leading-relaxed">
-                    Director – Diabetic Foot Care Clinic, CIIVES<br />
-                    Consultant, Swasthyam Superspeciality Hospital, Nagpur
-                </p>
-                <p class="font-medium text-blue-600 mt-2">
-                    Mobile: <a href="tel:+918600888444">+91-8600888444</a>
-                </p>
-                <a href="appointment.html"
-                    class="inline-block bg-[#1D3156] text-white px-6 py-2 mt-2 rounded-full shadow hover:bg-blue-900 transition duration-300">
-                    Book Appointment
-                </a>
-            </div>
-
-            <!-- Right -->
-            <div class="md:w-1/3 relative flex justify-center">
-                <img src="/assets/images/teams/Dr Preeti Gupta.jpg" alt="Dr. Preeti Gupta"
-                    class="w-72 h-72 object-cover rounded-full shadow-lg ring-4 ring-primary ring-offset-2 transition-transform duration-500 hover:scale-105" />
-            </div>
-        </div>
-
-
-        <!-- === 2nd Div: Details === -->
-        <div
-            class="flex flex-col lg:flex-row gap-12 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 p-8">
-
-            <!-- Right1: Quick Navigation -->
-            <div class="hidden lg:block lg:w-1/3 p-6 rounded-xl shadow-md bg-white space-y-4 sticky top-24 h-fit">
-                <h3 class="text-xl font-bold text-primary mb-2">Quick Navigation</h3>
-                <ul class="space-y-2 list-disc list-inside text-sm text-blue-700 font-medium">
-                    <li><a href="#about" class="hover:underline">About</a></li>
-                    <li><a href="#education" class="hover:underline">Education</a></li>
-                    <li><a href="#accolades" class="hover:underline">Accolades</a></li>
-                    <li><a href="#expertise" class="hover:underline">Areas of Expertise</a></li>
-                </ul>
-            </div>
-
-            <!-- Left1: Multiple Info Boxes -->
-            <div class="lg:w-2/3 space-y-10">
-
-                <!-- About -->
-                <div id="about" class="bg-gray-50 p-5 rounded-xl shadow-md">
-                    <h3 class="text-xl font-bold text-primary mb-2">About</h3>
-                    <p class="text-sm leading-relaxed text-gray-800">
-                        Dr. Preeti Gupta is an experienced Diabetic Foot Consultant with advanced training in foot
-                        diagnostics and podiatric care. She specialises in the early detection, prevention, and surgical
-                        & non-surgical management of diabetic foot complications, playing a vital role in limb salvage
-                        and amputation prevention.
-
-                        <br><br>
-                        Her clinical practice includes detailed vascular and neurological assessments such as Vibration
-                        Perception Testing (VPT), Ankle-Brachial and Toe-Brachial Index measurements, Transcutaneous
-                        Oxygen Pressure (TcPO₂), Plantar Pressure Mapping, and Gait Analysis. She also offers targeted
-                        therapies like Vacuum-Assisted Closure (VAC) therapy, ingrown toenail management, and
-                        orthotic/prosthetic guidance.
-
-                        <br><br>
-                        Working as part of a multidisciplinary team, Dr. Preeti is committed to evidence-based foot care
-                        that prioritises long-term healing, biomechanical correction, and patient education for those at
-                        risk of diabetic foot ulcers.
-
-                        <br><br>
-                        <strong>Languages:</strong> English, Hindi, Marathi
+    <main>
+        <section class="bg-gray-50 py-16 px-6" id="conditions">
+            <div class="max-w-7xl mx-auto">
+                <!-- Heading -->
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold text-[#1D3156] mb-4">Conditions</h2>
+                    <p class="text-lg text-gray-600 mb-10">
+                        Curious about the vascular conditions we manage? Many of them begin quietly, with barely
+                        noticeable
+                        signs. But with the right diagnosis and timely treatment, they’re treatable — often reversible.
                     </p>
-
-                </div>
-
-                <!-- Education -->
-                <div id="education" class="bg-gray-50 p-5 rounded-xl shadow-md">
-                    <h3 class="text-xl font-bold text-primary mb-2">Education</h3>
-                    <ul class="list-disc pl-6 space-y-1 text-sm">
-                        <li><span class="font-bold">2019:</span> FDFM – IPA</li>
-                        <li><span class="font-bold">2007:</span> DNB – JLN Hospital, Bhilai</li>
-                        <li><span class="font-bold">2002:</span> MBBS – IGMC, Nagpur</li>
-                    </ul>
                 </div>
 
 
-                <!-- Accolades -->
-                <div id="accolades" class="bg-gray-50 p-6 rounded-xl shadow-md">
-                    <h3 class="text-2xl font-bold text-primary mb-4">Accolades</h3>
-                    <ul class="list-disc pl-6 text-sm space-y-2 text-gray-800">
+                <!-- Grid Layout -->
+                <div class="grid gap-8 md:grid-cols-2">
+                    <!-- Varicose Veins -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Varicose Veins</h3>
+                        <p class="text-gray-700 text-sm">
+                            These appear as twisted, bulging, blue or purple veins, most commonly on the legs and
+                            ankles. They are caused by weakened valves in the veins, which lead to blood pooling in the
+                            lower limbs.<br><br>
+                            Patients often notice visible discolouration along with leg heaviness, aching, or
+                            discomfort, especially after prolonged standing or sitting. In some cases, there may also be
+                            swelling or skin changes near the ankles.<br><br>
+                            Modern treatments are minimally invasive and typically do not require stitches. Damaged
+                            veins are sealed or removed using endovascular techniques, helping restore both appearance
+                            and comfort.
+                        </p>
+                    </div>
 
-                        <li><span class="font-bold">Life Member:</span> Indian Podiatry Association (IPA)</li>
-                        <li><span class="font-bold">Life Member:</span> Diabetic Foot Society of India (DFSI)</li>
-                        <li><span class="font-bold">Principal Investigator in Trial:</span> Role of stem cells in
-                            healing of
-                            Ischaemic ulcers in non-reconstructable arterial disease (STEMPUTICS).
-                        </li>
-                        <li><span class="font-bold">Co-Principal Investigator in Trial:</span> Role of Woxheal in
-                            non-healing wounds.</li>
-                    </ul>
+                    <!-- Acute DVT -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Acute Deep Vein Thrombosis (DVT)</h3>
+                        <p class="text-gray-700 text-sm">
+                            Acute DVT is a sudden formation of a blood clot in the deep veins, most commonly in the
+                            legs. Patients may experience swelling, pain, tightness, or heaviness in one leg. The skin
+                            can appear reddish or bluish, and the area may feel warm or tender to touch.<br><br>
+                            This is a medical emergency. A fragment of the clot can dislodge and travel to the lungs,
+                            causing a pulmonary embolism which is life-threatening.<br><br>
+                            Treatment includes blood-thinning medications or, in selected cases, catheter-based clot
+                            removal. Timely intervention lowers the risk of complications and can be life-saving.
+                        </p>
+                    </div>
+
+                    <!-- Chronic DVT -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Chronic DVT & Post-Thrombotic Syndrome
+                            (PTS)</h3>
+                        <p class="text-gray-700 text-sm">
+                            In some patients, deep vein damage persists even after a blood clot has been treated. When
+                            the vein valves remain impaired, it can lead to a combination of long-term symptoms known as
+                            Post-Thrombotic Syndrome (PTS).<br><br>
+                            Common complaints include leg swelling, heaviness, aching pain, or a feeling of tightness.
+                            Skin changes such as darkening, hardening, or thickening may develop over time. In advanced
+                            cases, non-healing ulcers can occur near the ankle.<br><br>
+                            Management includes regular follow-up, compression therapy, and lifestyle modifications. In
+                            selected cases, endovascular procedures may be considered to restore vein function and
+                            improve quality of life.
+                        </p>
+                    </div>
+
+                    <!-- Varicocele -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Varicocele</h3>
+                        <p class="text-gray-700 text-sm">
+                            A varicocele is an abnormal enlargement of veins within the scrotum, similar to varicose
+                            veins in the legs. It typically affects one side and occurs due to faulty valves that
+                            disrupt normal blood flow.<br><br>
+                            Patients may report a dull ache, heaviness, or a dragging sensation in the scrotum. The
+                            affected veins may become more prominent or visible while standing.<br><br>
+                            While often harmless, a varicocele can impact sperm quality and male fertility. It can be
+                            effectively treated with a minimally invasive, single-puncture procedure that seals the
+                            affected veins and restores normal blood flow to relieve symptoms and improve reproductive
+                            health.
+                        </p>
+                    </div>
+
+                    <!-- Diabetic Foot & Gangrene -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Diabetic Foot & Gangrene</h3>
+                        <p class="text-gray-700 text-sm">
+                            In patients with diabetes, persistently high blood sugar can damage nerves and blood
+                            vessels, reducing sensation in the feet. Small injuries may go unnoticed and progress
+                            silently into serious infections.<br><br>
+                            Poor circulation further delays healing. When blood flow to the toes or foot is severely
+                            reduced, tissue begins to die — a condition known as gangrene.<br><br>
+                            Early detection and prompt intervention are critical. Treatment involves restoring blood
+                            flow, controlling infection, and wound care. In many cases, timely vascular procedures can
+                            help avoid major complications and prevent limb loss.
+                        </p>
+                    </div>
+
+                    <!-- Carotid Artery Disease -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Carotid Artery Disease</h3>
+                        <p class="text-gray-700 text-sm">
+                            Carotid arteries are major blood vessels in the neck that supply oxygen-rich blood to the
+                            brain. Over time, these arteries can narrow due to plaque buildup, a condition known as
+                            carotid artery stenosis.<br><br>
+                            Most patients do not experience symptoms until a serious event occurs. There may be brief
+                            episodes of stroke-like symptoms such as vision loss, slurred speech, or weakness on one
+                            side of the body.<br><br>
+                            Diagnosis is confirmed through a simple, non-invasive scan. Treatment depends on the
+                            severity and site of blockage. It can be managed with medication or a procedure to remove or
+                            bypass the narrowed segment.
+                        </p>
+                    </div>
+
+                    <!-- Aneurysms -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Aneurysms (Aortic or Peripheral)</h3>
+                        <p class="text-gray-700 text-sm">
+                            An aneurysm is a balloon-like bulge that forms at a weak site in an artery. It can occur in
+                            the aorta or in peripheral arteries such as those in the legs.<br><br>
+                            Most aneurysms grow slowly and do not cause symptoms in the early stages. If left untreated,
+                            they can rupture and cause life-threatening bleeding.<br><br>
+                            Treatment depends on the size, location, and risk of rupture. Small aneurysms are monitored
+                            regularly. Larger ones can be treated using endovascular repair techniques.
+                        </p>
+                    </div>
+
+                    <!-- Peripheral Arterial Disease -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Peripheral Arterial Disease (PAD)</h3>
+                        <p class="text-gray-700 text-sm">
+                            PAD occurs when arteries that supply blood to the limbs become narrowed or blocked due to
+                            plaque buildup. This restricts blood flow, especially during physical activity.<br><br>
+                            Symptoms include leg pain, cramping, or fatigue while walking, which improves with rest. In
+                            advanced stages, PAD can lead to non-healing wounds or gangrene.<br><br>
+                            Treatment includes lifestyle changes, medications, or minimally invasive procedures like
+                            angioplasty.
+                        </p>
+                    </div>
+
+                    <!-- AV Fistula -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">AV Fistula for Dialysis</h3>
+                        <p class="text-gray-700 text-sm">
+                            An arteriovenous (AV) fistula is a surgical connection between an artery and a vein, usually
+                            in the arm, for dialysis access.<br><br>
+                            It allows high blood flow for effective dialysis and reduces risks of infection and clotting
+                            compared to other access types.<br><br>
+                            When created by a skilled specialist, AV fistulas last longer and improve quality of life
+                            for dialysis patients.
+                        </p>
+                    </div>
                 </div>
 
-
-                <!-- Areas of Expertise -->
-                <div id="expertise" class="bg-gray-50 p-6 rounded-xl shadow-md">
-                    <h3 class="text-2xl font-bold text-primary mb-4">Areas of Expertise</h3>
-
-
-
-                    <!-- Diabetic Foot Evaluation & Risk Profiling -->
-                    <div class="mb-6">
-                        <h4 class="text-lg font-semibold mb-2">Diabetic Foot Evaluation & Risk Profiling</h4>
-                        <ul class="list-disc pl-6 space-y-1 text-sm">
-                            <li>Vibration Perception Testing (VPT)</li>
-                            <li>Ankle-Brachial Index (ABI)</li>
-                            <li>Toe-Brachial Index and Toe Pressure Assessment</li>
-                            <li>Transcutaneous Partial Pressure of Oxygen (TcPO₂)</li>
-                            <li>Plantar Pressure Monitoring</li>
-                            <li>Gait Analysis and Assessment</li>
-                        </ul>
-                    </div>
-
-                    <!-- Diabetic Foot Care and Treatment -->
-                    <div class="mb-6">
-                        <h4 class="text-lg font-semibold mb-2">Diabetic Foot Care and Treatment</h4>
-                        <ul class="list-disc pl-6 space-y-1 text-sm">
-                            <li>Management of neuropathic & neuroischaemic diabetic foot ulcers</li>
-                            <li>ICharcot’s foot & ulcer</li>
-                            <li>Anodyne therapy for peripheral neuropathy</li>
-                            <li>Offloading of diabetic foot ulcers - Pegassist, offloading sandals/shoes/insoles</li>
-                            <li>VAC Therapy (Negative Pressure Wound Therapy)</li>
-                            <li>Podiatric interventions for amputation prevention</li>
-                        </ul>
-                    </div>
-
-                    <!-- Venous Ulcer Management -->
-                    <div class="mb-6">
-                        <h4 class="text-lg font-semibold mb-2">Venous Ulcer Management</h4>
-                        <ul class="list-disc pl-6 space-y-1 text-sm">
-                            <li>Lymphapress therapy</li>
-                            <li>Four-layer compression bandaging</li>
-                            <li>Wound dressing and monitoring</li>
-                        </ul>
-                    </div>
-
-                   
-
-                    <!-- Podiatry Procedures -->
-                    <div class="mb-6">
-                        <h4 class="text-lg font-semibold mb-2">Podiatry Procedures</h4>
-                        <ul class="list-disc pl-6 space-y-1 text-sm">
-                            <li>Surgical treatment for ingrown toenail</li>
-                            <li>Callus and corn removal with non-traumatic machine</li>
-                            <li>Plantar pressure offloading</li>
-                            
-                        </ul>
-                    </div>
-
-                    <!-- Podiatry Procedures -->
-                    <div class="mb-6">
-                        <h4 class="text-lg font-semibold mb-2">Advanced Wound Care</h4>
-                        <ul class="list-disc pl-6 space-y-1 text-sm">
-                            <li>Negative pressure wound therapy (NPWT)</li>
-                            <li>Topical oxygen therapy</li>
-                            <li>Platelet-Rich Plasma (PRP)</li>
-                            <li>Bioimplants</li>
-                        </ul>
-                    </div>
-
-                    <!-- Orthotics and Prosthetics -->
-                    <div class="mb-6">
-                        <h4 class="text-lg font-semibold mb-2">Orthotics and Prosthetics</h4>
-                        <ul class="list-disc pl-6 space-y-1 text-sm">
-                            <li>Prosthetic planning</li>
-                            <li>Custom orthotic devices</li>
-                            <li>Silicone prosthesis</li>
-                        </ul>
-                    </div>
-
-
-
-                </div>
-
-
+                <!-- Ending Note -->
+                <p class="mt-12 text-center text-gray-700 text-base">
+                    At <strong>CIIVES</strong>, we understand the urgency and complexity of vascular conditions. With
+                    timely diagnosis and expert care, most vascular problems can be treated effectively.
+                </p>
             </div>
+        </section>
 
-
-
-
-        </div>
-
-
-    </section>
+    </main>
 
 
     <!-- Footer -->
@@ -459,7 +427,41 @@
                 from: { x: 100 }
             });
         });
+
+        gsap.from(".lg\\:block", {
+            opacity: 0,
+            x: -30,
+            duration: 1.2,
+            delay: 0.3,
+            ease: "power3.out"
+        });
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate all sections with data-gsap
+        gsap.utils.toArray("[data-gsap]").forEach((section, i) => {
+            gsap.fromTo(section,
+                {
+                    opacity: 0,
+                    y: 40
+                },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    }
+                }
+            );
+        });
     </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 </body>
 
