@@ -14,6 +14,9 @@
 
 
     <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 </head>
 
 <body class="bg-gray-100 text-gray-800">
@@ -58,7 +61,8 @@
                         class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
 
                         <a href="../views/ciives.html" class="block px-4 py-2 hover:bg-blue-50">CIIVES</a>
-                        <a href="../views/dr-rohit-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Rohit Gupta</a>
+                        <a href="../views/dr-rohit-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Rohit
+                            Gupta</a>
                         <a href="../views/dr-kartik-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Kartik
                             Gupta</a>
                         <a href="../views/dr-preeti-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Preeti
@@ -66,7 +70,9 @@
                     </div>
                 </div>
 
-                <a href="#" class="hover:text-blue-600">Conditions</a>
+                <a href="../views/vascular-disease.html" class="hover:text-blue-600">Vascular Disease</a>
+                <a href="#" class="hover:text-blue-600">Announcements</a>
+                <a href="../views/gallery.html" class="hover:text-blue-600">Gallery</a>
                 <!-- Conditions Dropdown -->
                 <!-- <div class="relative group">
                     <button class="inline-flex items-center p-2 text-gray-700 shadow-none">Conditions ▾</button>
@@ -181,8 +187,90 @@
 
 
     <main>
-        <h2>Gallery</h2>
+        <!-- Gallery Section -->
+        <section class="bg-gray-50 py-16 px-4">
+            <div class="max-w-7xl mx-auto text-center">
+                <!-- Heading -->
+                <h2 class="text-4xl font-bold text-[#1D3156] mb-4">Our Image Gallery</h2>
+                <!-- <p class="text-lg text-gray-600 mb-8">Explore moments from our hospital.</p> -->
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-4 mb-10 px-4">
+                    <button
+                        class="filter-btn bg-primary text-white py-2 px-5 rounded-lg hover:bg-primary transition text-sm md:text-base active"
+                        data-category="all">All</button>
+                    <button
+                        class="filter-btn bg-gray-300 text-gray-800 py-2 px-5 rounded-lg hover:bg-gray-400 transition text-sm md:text-base"
+                        data-category="procedures">Procedures</button>
+                    <button
+                        class="filter-btn bg-gray-300 text-gray-800 py-2 px-5 rounded-lg hover:bg-gray-400 transition text-sm md:text-base"
+                        data-category="pba">Before & After</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+                    <!-- Image Item 1 -->
+                    <a href="../assets/images/gallery/1.jpg" class="gallery-item glightbox group block"
+                        data-category="procedures" data-gallery="gallery">
+                        <img src="../assets/images/gallery/1.jpg" alt="Gallery Image 1"
+                            class="w-full h-60 object-cover rounded-lg shadow-md group-hover:scale-105 transition duration-300">
+                    </a>
+
+                    <!-- Image Item 2 -->
+                    <a href="../assets/images/gallery/Bef Af 1week DVT.jpg" class="gallery-item glightbox group block" data-category="pba"
+                        data-gallery="gallery">
+                        <img src="../assets/images/gallery/Bef Af 1week DVT.jpg" alt="Gallery Image 2"
+                            class="w-full h-60 object-cover rounded-lg shadow-md group-hover:scale-105 transition duration-300">
+                    </a>
+
+                    <!-- Image Item 3 -->
+                    <a href="../assets/images/gallery/Bef Af Popliteal - DorsalisPedis Bypass Case2.jpg" class="gallery-item glightbox group block" data-category="pba"
+                        data-gallery="gallery">
+                        <img src="../assets/images/gallery/Bef Af Popliteal - DorsalisPedis Bypass Case2.jpg" alt="Gallery Image 3"
+                            class="w-full h-60 object-cover rounded-lg shadow-md group-hover:scale-105 transition duration-300">
+                    </a>
+
+                    <!-- Image Item 4 -->
+                    <a href="../assets/images/gallery/Bef Af PVD Case1.jpg" class="gallery-item glightbox group block" data-category="pba"
+                        data-gallery="gallery">
+                        <img src="../assets/images/gallery/Bef Af PVD Case1.jpg" alt="Gallery Image 4"
+                            class="w-full h-60 object-cover rounded-lg shadow-md group-hover:scale-105 transition duration-300">
+                    </a>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox JS -->
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+        <script>
+            const lightbox = GLightbox({ selector: '.glightbox' });
+
+            // Gallery filter script
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const category = button.getAttribute('data-category');
+
+                    // Active button highlight
+                    filterButtons.forEach(btn => btn.classList.remove('bg-primary', 'text-white'));
+                    filterButtons.forEach(btn => btn.classList.add('bg-gray-300', 'text-gray-800'));
+                    button.classList.remove('bg-gray-300', 'text-gray-800');
+                    button.classList.add('bg-primary', 'text-white');
+
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        const itemCategory = item.getAttribute('data-category');
+                        item.style.display = (category === 'all' || itemCategory === category) ? 'block' : 'none';
+                    });
+                });
+            });
+        </script>
     </main>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white pt-10 pb-6 px-4">

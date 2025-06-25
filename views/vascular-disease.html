@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditions</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+    <!-- Top Bar -->
+    <div class="bg-primary text-white text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-1 md:mb-0">
+                <span class="font-bold">CIIVES</span>
+                <span class="hidden sm:inline">Central India Institute of Vascular and Endovascular Sciences</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center space-x-1">
+                    <i class="ri-phone-fill"></i><span>Emergency: +91 9423866938</span>
+                </span>
+                <a href="https://www.facebook.com/profile.php?id=61576810187262" class="hover:text-blue-200"><i
+                        class="ri-facebook-circle-fill"></i></a>
+                <a href="https://www.instagram.com/central_indiavascular/" class="hover:text-blue-200"><i
+                        class="ri-instagram-line"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="bg-info shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="../index.html" class="flex items-center space-x-2">
+                <img src="../assets/images/logo/logo.png" alt="CIIVES Logo" class="h-20 w-auto" />
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-6 text-gray-700 font-medium">
+                <a href="../index.html">Home</a>
+
+                <!-- About Us Dropdown -->
+                <div class="relative group">
+                    <button class="inline-flex items-center p-2 text-gray-700 shadow-none">About Us ▾</button>
+                    <div
+                        class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+
+                        <a href="../views/ciives.html" class="block px-4 py-2 hover:bg-blue-50">CIIVES</a>
+                        <a href="../views/dr-rohit-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Rohit
+                            Gupta</a>
+                        <a href="../views/dr-kartik-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Kartik
+                            Gupta</a>
+                        <a href="../views/dr-preeti-gupta.html" class="block px-4 py-2 hover:bg-blue-50">Dr. Preeti
+                            Gupta</a>
+                    </div>
+                </div>
+
+                <a href="../views/vascular-disease.html" class="hover:text-blue-600">Vascular Disease</a>
+                <a href="#" class="hover:text-blue-600">Announcements</a>
+                <a href="../views/gallery.html" class="hover:text-blue-600">Gallery</a>
+                <!-- Conditions Dropdown -->
+                <!-- <div class="relative group">
+                    <button class="inline-flex items-center p-2 text-gray-700 shadow-none">Conditions ▾</button>
+                    <div
+                        class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Varicose Veins</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Deep Vein Thrombosis</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Acute Limb Ischemia</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Diabetic Foot & Ulcer</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Gangrene</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Carotid Artery Disease</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Aneurysms</a>
+                    </div>
+                </div> -->
+
+                <!-- Treatments Dropdown -->
+                <!-- <div class="relative group">
+                    <button class="inline-flex items-center p-2 text-gray-700 shadow-none">Treatments ▾</button>
+                    <div
+                        class="absolute left-0 mt-2 w-72 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Treatments for Varicose Veins</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">AV Fistula for Dialysis</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Peripheral Angioplasty</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Peripheral Bypass</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Carotid Endarterectomy</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Endovascular Aneurysm Repair</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Thrombolysis for Clots</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">IVC Filter Insertion</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50">Athrectomy</a>
+                    </div>
+                </div> -->
+
+                <a href="../views/blogs.html" class="hover:text-blue-600">Blogs</a>
+                <a href="../views/contact.html" class="hover:text-blue-600">Contact Us</a>
+            </nav>
+
+            <!-- Appointment Button -->
+            <a href="../views/appointment.html"
+                class="hidden md:inline-block bg-primary text-text px-4 py-2 rounded-lg hover:bg-secondary transition font-medium">
+                Book Appointment
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-3xl text-gray-800 focus:outline-none">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden px-4 pb-6 text-gray-700 font-medium">
+            <a href="../index.html" class="block py-2 border-b hover:text-blue-600">Home</a>
+            <!-- Mobile About Us Dropdown -->
+            <details class="py-2 border-b">
+                <summary class="cursor-pointer hover:text-blue-600">About Us</summary>
+                <div class="pl-4 pt-2 space-y-1">
+                    <!-- <a href="views/about.html" class="block hover:text-blue-500">Overview</a> -->
+                    <a href="../views/ciives.html" class="block hover:text-blue-500">CIIVES</a>
+                    <a href="../views/dr-rohit-gupta.html" class="block hover:text-blue-500">Dr. Rohit Gupta</a>
+                    <a href="../views/dr-kartik-gupta.html" class="block hover:text-blue-500">Dr. Kartik Gupta</a>
+                    <a href="../views/dr-preeti-gupta.html" class="block hover:text-blue-500">Dr. Preeti Gupta</a>
+                </div>
+            </details>
+
+            <!-- Mobile Conditions Dropdown -->
+            <details class="py-2 border-b">
+                <summary class="cursor-pointer hover:text-blue-600">Conditions</summary>
+                <div class="pl-4 pt-2 space-y-1">
+                    <a href="#" class="block hover:text-blue-500">Varicose Veins</a>
+                    <a href="#" class="block hover:text-blue-500">Deep Vein Thrombosis</a>
+                    <a href="#" class="block hover:text-blue-500">Acute Limb Ischemia</a>
+                    <a href="#" class="block hover:text-blue-500">Diabetic Foot & Ulcer</a>
+                    <a href="#" class="block hover:text-blue-500">Gangrene</a>
+                    <a href="#" class="block hover:text-blue-500">Carotid Artery Disease</a>
+                    <a href="#" class="block hover:text-blue-500">Aneurysms</a>
+                </div>
+            </details>
+
+            <!-- Mobile Treatments Dropdown -->
+            <details class="py-2 border-b">
+                <summary class="cursor-pointer hover:text-blue-600">Treatments</summary>
+                <div class="pl-4 pt-2 space-y-1">
+                    <a href="#" class="block hover:text-blue-500">Treatments for Varicose Veins</a>
+                    <a href="#" class="block hover:text-blue-500">AV Fistula for Dialysis</a>
+                    <a href="#" class="block hover:text-blue-500">Peripheral Angioplasty</a>
+                    <a href="#" class="block hover:text-blue-500">Peripheral Bypass</a>
+                    <a href="#" class="block hover:text-blue-500">Carotid Endarterectomy</a>
+                    <a href="#" class="block hover:text-blue-500">Endovascular Aneurysm Repair</a>
+                    <a href="#" class="block hover:text-blue-500">Thrombolysis for Clots</a>
+                    <a href="#" class="block hover:text-blue-500">IVC Filter Insertion</a>
+                    <a href="#" class="block hover:text-blue-500">Athrectomy</a>
+                </div>
+            </details>
+
+            <a href="../views/blogs.html" class="block py-2 border-b hover:text-blue-600">Blogs</a>
+            <a href="../views/contact.html" class="block py-2 border-b hover:text-blue-600">Contact Us</a>
+
+            <a href="../views/appointment.html"
+                class="block text-center mt-3 bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                Book Appointment
+            </a>
+        </div>
+    </header>
+
+    <!-- Toggle Script -->
+    <script>
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <main>
+        <section class="bg-gray-50 py-16 px-6" id="conditions">
+            <div class="max-w-7xl mx-auto">
+                <!-- Heading -->
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold text-[#1D3156] mb-4">Conditions</h2>
+                    <p class="text-lg text-gray-600 mb-10">
+                        Curious about the vascular conditions we manage? Many of them begin quietly, with barely
+                        noticeable
+                        signs. But with the right diagnosis and timely treatment, they’re treatable — often reversible.
+                    </p>
+                </div>
+
+
+                <!-- Grid Layout -->
+                <div class="grid gap-8 md:grid-cols-2">
+                    <!-- Varicose Veins -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Varicose Veins</h3>
+                        <p class="text-gray-700 text-sm">
+                            These appear as twisted, bulging, blue or purple veins, most commonly on the legs and
+                            ankles. They are caused by weakened valves in the veins, which lead to blood pooling in the
+                            lower limbs.<br><br>
+                            Patients often notice visible discolouration along with leg heaviness, aching, or
+                            discomfort, especially after prolonged standing or sitting. In some cases, there may also be
+                            swelling or skin changes near the ankles.<br><br>
+                            Modern treatments are minimally invasive and typically do not require stitches. Damaged
+                            veins are sealed or removed using endovascular techniques, helping restore both appearance
+                            and comfort.
+                        </p>
+                    </div>
+
+                    <!-- Acute DVT -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Acute Deep Vein Thrombosis (DVT)</h3>
+                        <p class="text-gray-700 text-sm">
+                            Acute DVT is a sudden formation of a blood clot in the deep veins, most commonly in the
+                            legs. Patients may experience swelling, pain, tightness, or heaviness in one leg. The skin
+                            can appear reddish or bluish, and the area may feel warm or tender to touch.<br><br>
+                            This is a medical emergency. A fragment of the clot can dislodge and travel to the lungs,
+                            causing a pulmonary embolism which is life-threatening.<br><br>
+                            Treatment includes blood-thinning medications or, in selected cases, catheter-based clot
+                            removal. Timely intervention lowers the risk of complications and can be life-saving.
+                        </p>
+                    </div>
+
+                    <!-- Chronic DVT -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Chronic DVT & Post-Thrombotic Syndrome
+                            (PTS)</h3>
+                        <p class="text-gray-700 text-sm">
+                            In some patients, deep vein damage persists even after a blood clot has been treated. When
+                            the vein valves remain impaired, it can lead to a combination of long-term symptoms known as
+                            Post-Thrombotic Syndrome (PTS).<br><br>
+                            Common complaints include leg swelling, heaviness, aching pain, or a feeling of tightness.
+                            Skin changes such as darkening, hardening, or thickening may develop over time. In advanced
+                            cases, non-healing ulcers can occur near the ankle.<br><br>
+                            Management includes regular follow-up, compression therapy, and lifestyle modifications. In
+                            selected cases, endovascular procedures may be considered to restore vein function and
+                            improve quality of life.
+                        </p>
+                    </div>
+
+                    <!-- Varicocele -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Varicocele</h3>
+                        <p class="text-gray-700 text-sm">
+                            A varicocele is an abnormal enlargement of veins within the scrotum, similar to varicose
+                            veins in the legs. It typically affects one side and occurs due to faulty valves that
+                            disrupt normal blood flow.<br><br>
+                            Patients may report a dull ache, heaviness, or a dragging sensation in the scrotum. The
+                            affected veins may become more prominent or visible while standing.<br><br>
+                            While often harmless, a varicocele can impact sperm quality and male fertility. It can be
+                            effectively treated with a minimally invasive, single-puncture procedure that seals the
+                            affected veins and restores normal blood flow to relieve symptoms and improve reproductive
+                            health.
+                        </p>
+                    </div>
+
+                    <!-- Diabetic Foot & Gangrene -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Diabetic Foot & Gangrene</h3>
+                        <p class="text-gray-700 text-sm">
+                            In patients with diabetes, persistently high blood sugar can damage nerves and blood
+                            vessels, reducing sensation in the feet. Small injuries may go unnoticed and progress
+                            silently into serious infections.<br><br>
+                            Poor circulation further delays healing. When blood flow to the toes or foot is severely
+                            reduced, tissue begins to die — a condition known as gangrene.<br><br>
+                            Early detection and prompt intervention are critical. Treatment involves restoring blood
+                            flow, controlling infection, and wound care. In many cases, timely vascular procedures can
+                            help avoid major complications and prevent limb loss.
+                        </p>
+                    </div>
+
+                    <!-- Carotid Artery Disease -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Carotid Artery Disease</h3>
+                        <p class="text-gray-700 text-sm">
+                            Carotid arteries are major blood vessels in the neck that supply oxygen-rich blood to the
+                            brain. Over time, these arteries can narrow due to plaque buildup, a condition known as
+                            carotid artery stenosis.<br><br>
+                            Most patients do not experience symptoms until a serious event occurs. There may be brief
+                            episodes of stroke-like symptoms such as vision loss, slurred speech, or weakness on one
+                            side of the body.<br><br>
+                            Diagnosis is confirmed through a simple, non-invasive scan. Treatment depends on the
+                            severity and site of blockage. It can be managed with medication or a procedure to remove or
+                            bypass the narrowed segment.
+                        </p>
+                    </div>
+
+                    <!-- Aneurysms -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Aneurysms (Aortic or Peripheral)</h3>
+                        <p class="text-gray-700 text-sm">
+                            An aneurysm is a balloon-like bulge that forms at a weak site in an artery. It can occur in
+                            the aorta or in peripheral arteries such as those in the legs.<br><br>
+                            Most aneurysms grow slowly and do not cause symptoms in the early stages. If left untreated,
+                            they can rupture and cause life-threatening bleeding.<br><br>
+                            Treatment depends on the size, location, and risk of rupture. Small aneurysms are monitored
+                            regularly. Larger ones can be treated using endovascular repair techniques.
+                        </p>
+                    </div>
+
+                    <!-- Peripheral Arterial Disease -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">Peripheral Arterial Disease (PAD)</h3>
+                        <p class="text-gray-700 text-sm">
+                            PAD occurs when arteries that supply blood to the limbs become narrowed or blocked due to
+                            plaque buildup. This restricts blood flow, especially during physical activity.<br><br>
+                            Symptoms include leg pain, cramping, or fatigue while walking, which improves with rest. In
+                            advanced stages, PAD can lead to non-healing wounds or gangrene.<br><br>
+                            Treatment includes lifestyle changes, medications, or minimally invasive procedures like
+                            angioplasty.
+                        </p>
+                    </div>
+
+                    <!-- AV Fistula -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-[#1D3156] mb-2">AV Fistula for Dialysis</h3>
+                        <p class="text-gray-700 text-sm">
+                            An arteriovenous (AV) fistula is a surgical connection between an artery and a vein, usually
+                            in the arm, for dialysis access.<br><br>
+                            It allows high blood flow for effective dialysis and reduces risks of infection and clotting
+                            compared to other access types.<br><br>
+                            When created by a skilled specialist, AV fistulas last longer and improve quality of life
+                            for dialysis patients.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ending Note -->
+                <p class="mt-12 text-center text-gray-700 text-base">
+                    At <strong>CIIVES</strong>, we understand the urgency and complexity of vascular conditions. With
+                    timely diagnosis and expert care, most vascular problems can be treated effectively.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-10 pb-6 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Section 1: Site, Logo, Description & Social Links -->
+            <div>
+                <!-- Logo and Title -->
+                <div class="flex items-center space-x-3 mb-4">
+                    <!-- <img src="assets/images/logo/logo2.png" alt="CIIVES Logo" class="h-12 w-auto" /> -->
+                    <h4 class="text-xl font-semibold text-white">CIIVES</h4>
+                </div>
+
+                <!-- Description -->
+                <p class="text-gray-200 mb-4 max-w-xs">
+                    Central India Institute of Vascular and Endovascular Sciences.
+                </p>
+
+                <!-- Website Link -->
+                <p class="mb-2">
+                    Website:
+                    <a href="https://www.ciives.in" target="_blank" class="text-blue-500 hover:underline">
+                        www.ciives.in
+                    </a>
+                </p>
+
+                <!-- Social Links -->
+                <div class="flex space-x-4 mt-4 text-xl">
+                    <a href="https://www.facebook.com/profile.php?id=61576810187262"
+                        class="text-blue-600 hover:text-white transition duration-300">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/central_indiavascular/"
+                        class="text-pink-500 hover:text-white transition duration-300">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!-- Section 2: Services -->
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Conditions</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-400">Varicose Veins</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Diabetic Foot</a></li>
+                    <li><a href="#" class="hover:text-blue-400">DVT</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Carotid EA</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Aneurysms</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Peripheral Angioplasty</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 3: Map -->
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Visit Us</h4>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <iframe class="w-full h-48"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.939755161134!2d79.06702697477154!3d21.114967884813005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf0c3ad8c14d%3A0x2ea7909c870f8ef3!2sSwasthyam%20Superspeciality%20Hospital!5e0!3m2!1sen!2sin!4v1749546413324!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center text-sm mt-10 text-gray-400 border-t border-gray-700 pt-4">
+            © 2025 CIIVES | All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            gsap.to("#profileLeft", {
+                x: 0,
+                opacity: 1,
+                duration: 1.2,
+                delay: 0.2,
+                ease: "power3.out",
+                from: { x: -100 }
+            });
+
+            gsap.to("#profileRight", {
+                x: 0,
+                opacity: 1,
+                duration: 1.2,
+                delay: 0.4,
+                ease: "power3.out",
+                from: { x: 100 }
+            });
+        });
+
+        gsap.from(".lg\\:block", {
+            opacity: 0,
+            x: -30,
+            duration: 1.2,
+            delay: 0.3,
+            ease: "power3.out"
+        });
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate all sections with data-gsap
+        gsap.utils.toArray("[data-gsap]").forEach((section, i) => {
+            gsap.fromTo(section,
+                {
+                    opacity: 0,
+                    y: 40
+                },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    }
+                }
+            );
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</body>
+
+</html>
